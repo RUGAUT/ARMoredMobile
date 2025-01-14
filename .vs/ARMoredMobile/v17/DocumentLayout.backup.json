@@ -3,22 +3,6 @@
   "WorkspaceRootPath": "D:\\ARMoredMobile\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|d:\\armoredmobile\\assets\\wheelrotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|solutionrelative:assets\\wheelrotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|d:\\armoredmobile\\assets\\script\\movebetweenpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\movebetweenpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|D:\\ARMoredMobile\\assets\\script\\loadingscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\loadingscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|D:\\ARMoredMobile\\assets\\script\\blinkanddestroy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\blinkanddestroy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|D:\\ARMoredMobile\\assets\\script\\fruitfusiongamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\fruitfusiongamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -39,64 +23,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "WheelRotation.cs",
-              "DocumentMoniker": "D:\\ARMoredMobile\\Assets\\WheelRotation.cs",
-              "RelativeDocumentMoniker": "Assets\\WheelRotation.cs",
-              "ToolTip": "D:\\ARMoredMobile\\Assets\\WheelRotation.cs",
-              "RelativeToolTip": "Assets\\WheelRotation.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T11:47:00.891Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MoveBetweenPoints.cs",
-              "DocumentMoniker": "D:\\ARMoredMobile\\Assets\\Script\\MoveBetweenPoints.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\MoveBetweenPoints.cs",
-              "ToolTip": "D:\\ARMoredMobile\\Assets\\Script\\MoveBetweenPoints.cs",
-              "RelativeToolTip": "Assets\\Script\\MoveBetweenPoints.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T14:23:23.411Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoadingScreen.cs",
-              "DocumentMoniker": "D:\\ARMoredMobile\\Assets\\Script\\LoadingScreen.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\LoadingScreen.cs",
-              "ToolTip": "D:\\ARMoredMobile\\Assets\\Script\\LoadingScreen.cs",
-              "RelativeToolTip": "Assets\\Script\\LoadingScreen.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T14:23:22.516Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BlinkAndDestroy.cs",
-              "DocumentMoniker": "D:\\ARMoredMobile\\Assets\\Script\\BlinkAndDestroy.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\BlinkAndDestroy.cs",
-              "ToolTip": "D:\\ARMoredMobile\\Assets\\Script\\BlinkAndDestroy.cs",
-              "RelativeToolTip": "Assets\\Script\\BlinkAndDestroy.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T14:23:21.851Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "FruitFusionGameManager.cs",
               "DocumentMoniker": "D:\\ARMoredMobile\\Assets\\Script\\FruitFusionGameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\FruitFusionGameManager.cs",
               "ToolTip": "D:\\ARMoredMobile\\Assets\\Script\\FruitFusionGameManager.cs",
               "RelativeToolTip": "Assets\\Script\\FruitFusionGameManager.cs",
-              "ViewState": "AgIAALMAAAAAAAAAAAAUwMIAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAAYwB0AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T11:39:22.782Z"
+              "WhenOpened": "2025-01-09T11:39:22.782Z",
+              "EditorCaption": ""
             }
           ]
         }

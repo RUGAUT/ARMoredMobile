@@ -33,7 +33,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: -0.00034904052, w: 0.99999994}
   m_LocalPosition: {x: -16.02, y: -5.71, z: 0}
-  m_LocalScale: {x: 0.059026398, y: 0.059026398, z: 0.059026398}
+  m_LocalScale: {x: 0.046222437, y: 0.046222437, z: 0.046222437}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -82,7 +82,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 93702a4adece1af489101d8d41b4981c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6ca0346134d9e5a4fb08c26101b1df76, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -148,8 +148,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.30452117, y: -0.7993707}
-  m_Size: {x: 10.033687, y: 10.338199}
+  m_Offset: {x: -0.7844341, y: -2.308222}
+  m_Size: {x: 13.188848, y: 17.473022}
   m_Direction: 0
 --- !u!50 &3236356744225091922
 Rigidbody2D:
@@ -191,7 +191,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 464588b7c0b13fc45ad094216c2e69c0, type: 3}
   m_Resource: {fileID: 8300000, guid: 464588b7c0b13fc45ad094216c2e69c0, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
