@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: fa4265eee9ea505488466521f92daaed
+  - enabled: 1
+    path: Assets/Scenes/Mode Arcade.unity
+    guid: b004a940b055e85488f39f9975b9d92d
+  - enabled: 1
+    path: Assets/Scenes/Lv1 Fusion.unity
+    guid: f163d71f3fa48db4bab1613c1916b1e0
+  - enabled: 1
+    path: Assets/Scenes/Lv1 Score.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Lv1 Fusion 1.unity
+    guid: 8103d2528adedce418cac2b06995c8e7
+  - enabled: 1
+    path: Assets/Scenes/Lv1 Fusion 2.unity
+    guid: dcb8b36ece1ef1043886b863a6aaf692
+  - enabled: 1
+    path: Assets/Scenes/Lv1 Score 1.unity
+    guid: 7879969541c4fe745a98018600eae07e
+  - enabled: 1
+    path: Assets/Scenes/Lv1 Score 2.unity
+    guid: 77ac060b7beaa234588f4413fe64d670
+  - enabled: 1
+    path: Assets/Scenes/Lv1 Score 3.unity
+    guid: 9b4e222221f8d324185d0f186a254967
+  - enabled: 1
+    path: Assets/Scenes/Lv1 Fusion 4.unity
+    guid: a3cec6f829d802c4da7b1e08db49cee0
+  m_configObjects:
+    com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000,
+      guid: 23adce668f7c32e41b8ea8ba2e5473be, type: 2}
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: a9504e2955e5fe04e91b0b28b68c6821,
+      type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000,
+      guid: 0681c7df18d0d104b8a8e810c8e6b836, type: 2}
+  m_UseUCBPForAssetBundles: 0
