@@ -1852,6 +1852,7 @@ MonoBehaviour:
   timeLimit: 60
   levelManager: {fileID: 0}
   level: 0
+  starRatingManager: {fileID: 0}
 --- !u!4 &778452924
 Transform:
   m_ObjectHideFlags: 0
@@ -2185,6 +2186,42 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c380ed4a11ab6e4fa1f794d5f406b0a, type: 3}
+--- !u!114 &890772906 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7148492366784629480, guid: 4c380ed4a11ab6e4fa1f794d5f406b0a,
+    type: 3}
+  m_PrefabInstance: {fileID: 890772905}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &890772907 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5563906043200966049, guid: 4c380ed4a11ab6e4fa1f794d5f406b0a,
+    type: 3}
+  m_PrefabInstance: {fileID: 890772905}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &890772908 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5551765501287887012, guid: 4c380ed4a11ab6e4fa1f794d5f406b0a,
+    type: 3}
+  m_PrefabInstance: {fileID: 890772905}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &895963680
 GameObject:
   m_ObjectHideFlags: 0
@@ -2899,6 +2936,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1019241924}
   - component: {fileID: 1019241925}
+  - component: {fileID: 1019241927}
   - component: {fileID: 1019241926}
   m_Layer: 0
   m_Name: FusionManager
@@ -2954,6 +2992,7 @@ MonoBehaviour:
   - {fileID: 5077868153815234158, guid: f8daffab667aa684e854287a8981d2d9, type: 3}
   requiredFusions: 04000000
   timer: 200
+  starRatingManager: {fileID: 1019241927}
   level: 6
 --- !u!61 &1019241926
 BoxCollider2D:
@@ -3001,6 +3040,24 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 4.2384896, y: 6.1966467}
   m_EdgeRadius: 0
+--- !u!114 &1019241927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019241922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688a7715087f27149b442a257d5fbd20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stars:
+  - {fileID: 890772908}
+  - {fileID: 890772907}
+  - {fileID: 890772906}
+  maxTime: 150
+  minTime: 50
 --- !u!1 &1069826889
 GameObject:
   m_ObjectHideFlags: 0
@@ -4279,7 +4336,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.03031969, y: -0.0043317825}
+  m_Offset: {x: -0.010461211, y: -0.0043317676}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4289,7 +4346,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.66157, y: 0.7156527}
+  m_Size: {x: 2.621853, y: 0.7156527}
   m_EdgeRadius: 0
 --- !u!212 &1628611830
 SpriteRenderer:

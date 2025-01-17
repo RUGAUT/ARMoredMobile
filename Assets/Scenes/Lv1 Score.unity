@@ -606,6 +606,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.3320448, y: 1.4594798}
   m_EdgeRadius: 0
+--- !u!114 &278452962 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8112972346216550783, guid: bd210a3396fcf864c8ef5e58c30d0c04,
+    type: 3}
+  m_PrefabInstance: {fileID: 1431533788070309225}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &382348490 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7058303189277113399, guid: bd210a3396fcf864c8ef5e58c30d0c04,
@@ -755,6 +767,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &526482779 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2179033167578214120, guid: bd210a3396fcf864c8ef5e58c30d0c04,
+    type: 3}
+  m_PrefabInstance: {fileID: 1431533788070309225}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &593049484 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 22627910299273547, guid: bd210a3396fcf864c8ef5e58c30d0c04,
@@ -1020,6 +1044,7 @@ GameObject:
   m_Component:
   - component: {fileID: 778452924}
   - component: {fileID: 778452923}
+  - component: {fileID: 778452925}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1054,11 +1079,12 @@ MonoBehaviour:
   returnDelay: 0.4
   topBoundaryCollider: {fileID: 139604462}
   fusionSpawnManager: {fileID: 757683974}
-  targetScore: 200
+  targetScore: 19
   timeLimit: 120
   levelManager: {fileID: 6698744375656552751, guid: 02b9728f63822b444bc4a0584248ab65,
     type: 3}
   level: 2
+  starRatingManager: {fileID: 778452925}
 --- !u!4 &778452924
 Transform:
   m_ObjectHideFlags: 0
@@ -1074,6 +1100,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &778452925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 778452922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688a7715087f27149b442a257d5fbd20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stars:
+  - {fileID: 526482779}
+  - {fileID: 278452962}
+  - {fileID: 1935385876}
+  maxTime: 200
+  minTime: 20
 --- !u!1001 &799127394
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1536,6 +1580,7 @@ MonoBehaviour:
   targetFruitPrefabs: []
   requiredFusions: 
   timer: 50
+  starRatingManager: {fileID: 0}
   level: 0
 --- !u!61 &1019241926
 BoxCollider2D:
@@ -1986,7 +2031,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.045686364, y: 0.0075654387}
+  m_Offset: {x: -0.028664768, y: 0.0075654387}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1996,7 +2041,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.670881, y: 0.76305974}
+  m_Size: {x: 2.6027946, y: 0.76305974}
   m_EdgeRadius: 0
 --- !u!212 &1628611830
 SpriteRenderer:
@@ -2158,6 +2203,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1935385876 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5536317000956674068, guid: bd210a3396fcf864c8ef5e58c30d0c04,
+    type: 3}
+  m_PrefabInstance: {fileID: 1431533788070309225}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1957164378 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7527420162115692084, guid: bd210a3396fcf864c8ef5e58c30d0c04,
@@ -2196,6 +2253,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 22627910299273547, guid: bd210a3396fcf864c8ef5e58c30d0c04,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2457396941074414041, guid: bd210a3396fcf864c8ef5e58c30d0c04,
         type: 3}
       propertyPath: m_Name

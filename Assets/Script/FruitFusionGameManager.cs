@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
+using static LevelManager;
 
 public class FruitFusionGameManager : MonoBehaviour
 {
@@ -33,6 +34,7 @@ public class FruitFusionGameManager : MonoBehaviour
     private bool isTopBoundaryMoving = false;
     private bool isGameOver = false;
 
+    public StarRatingManager starRatingManager; // Gestionnaire des étoiles
     public int level;
 
     void Start()
@@ -64,6 +66,9 @@ public class FruitFusionGameManager : MonoBehaviour
         {
             StartCoroutine(MoveTopBoundary(Vector3.right)); // Déplacer vers la droite
         }
+
+        // Mettre à jour les étoiles
+        starRatingManager.UpdateStarRating(timer);
 
         // Vérifier si un fruit touche le topBoundary pour Game Over
         List<Collider2D> gameOverFruits = new List<Collider2D>();
@@ -165,11 +170,39 @@ public class FruitFusionGameManager : MonoBehaviour
 
     void Win()
     {
+        // Afficher l'interface de victoire
         winUI.SetActive(true);
         Time.timeScale = 0;
-        timer = 9999999f;
+
+        // Déterminer le nombre d'étoiles en fonction du temps restant
+        int stars = starRatingManager.CalculateStars(timer);
+
+        // Récupérer les étoiles actuellement stockées pour ce niveau
+        int currentStars = PlayerPrefs.GetInt("Stars" + level, 0);
+
+        // Comparer les étoiles actuelles avec celles calculées et ne garder que le maximum
+        if (stars > currentStars)
+        {
+            // Mettre à jour les étoiles si le nouveau nombre est supérieur
+            PlayerPrefs.SetInt("Stars" + level, stars);
+        }
+
+        // Enregistrer le niveau comme complété
         PlayerPrefs.SetInt("isComplete" + level, 1);
+
+        // Débloquer le niveau suivant
+        int nextLevel = level + 1;
+        if (nextLevel <= LevelManager.Instance.levelButtons.Length)
+        {
+            PlayerPrefs.SetInt("isComplete" + nextLevel, 1);
+        }
+
+        // Appeler la mise à jour de l'affichage des étoiles dans LevelManager
+        LevelManager.Instance.UpdateLevelStars(level, Mathf.Max(stars, currentStars));
     }
+
+
+
 
     public void RestartGame()
     {
@@ -194,6 +227,7 @@ public class FruitFusionGameManager : MonoBehaviour
         fusionSpawnManager.RegisterFusion(obj);
     }
 }
+
 
 
 

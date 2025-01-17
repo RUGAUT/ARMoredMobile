@@ -4,7 +4,6 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
-    // Singleton pattern pour accès global au GameManager
     public static LevelManager Instance;
 
     public LevelButton[] levelButtons; // Liste des boutons avec leurs clés et scènes
@@ -15,16 +14,15 @@ public class LevelManager : MonoBehaviour
         public Button button;       // Le bouton pour le niveau
         public string levelKey;     // La clé PlayerPrefs (ex: "isComplete1")
         public string sceneName;    // Le nom de la scène à charger
+        public Image[] starImages;  // Les images des étoiles associées au bouton
     }
-
 
     private void Awake()
     {
-        // Assurer une seule instance du GameManager
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject); 
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
@@ -34,29 +32,45 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
-        // les etats de niveau
-        if (!PlayerPrefs.HasKey("isComplete1"))
-            PlayerPrefs.SetInt("isComplete1", 0); // 0 = false et 1 = true on changera les valeur en fin de niveau dans gameManager
-        if (!PlayerPrefs.HasKey("isComplete2"))
-            PlayerPrefs.SetInt("isComplete2", 0); 
-        if (!PlayerPrefs.HasKey("isComplete3"))
-            PlayerPrefs.SetInt("isComplete3", 0); 
-
-
-        // LEs boutons de niveaux
         foreach (LevelButton levelButton in levelButtons)
         {
-            if (PlayerPrefs.GetInt(levelButton.levelKey, 0) == 1)
+            // Désactiver toutes les étoiles au début
+            foreach (Image starImage in levelButton.starImages)
             {
-                // Si le niveau est complété, ajouter l'action pour lancer le nv suivant 
+                starImage.enabled = false;
+            }
+
+            int isComplete = PlayerPrefs.GetInt(levelButton.levelKey, 0);
+            int starCount = PlayerPrefs.GetInt("Stars" + levelButton.levelKey.Substring("isComplete".Length), 0);
+
+            // Vérification spéciale pour le niveau 1
+            if (levelButton.levelKey == "isComplete1" && isComplete == 0)
+            {
+                // Le niveau 1 est débloqué mais sans étoiles de base
                 levelButton.button.onClick.AddListener(() =>
                 {
                     SceneManager.LoadScene(levelButton.sceneName);
                 });
+                levelButton.button.interactable = true; // Le niveau 1 est jouable
+            }
+            else if (isComplete == 1)
+            {
+                levelButton.button.onClick.AddListener(() =>
+                {
+                    SceneManager.LoadScene(levelButton.sceneName);
+                });
+
+                // Activer uniquement les étoiles correspondant au nombre enregistré
+                for (int i = 0; i < levelButton.starImages.Length; i++)
+                {
+                    if (i < starCount)
+                    {
+                        levelButton.starImages[i].enabled = true; // Activer les étoiles gagnées
+                    }
+                }
             }
             else
             {
-                // Sinon, désactiver le bouton ou ajouter un message
                 levelButton.button.interactable = false;
                 levelButton.button.onClick.AddListener(() =>
                 {
@@ -64,14 +78,41 @@ public class LevelManager : MonoBehaviour
                 });
             }
         }
-
     }
 
-    // Fonction pour charger une scène par son nom
-     public void LoadScene(string sceneName)
+
+    public void UpdateLevelStars(int level, int starCount)
     {
-        Time.timeScale = 1 ;
+        foreach (LevelButton levelButton in levelButtons)
+        {
+            if (levelButton.levelKey == "isComplete" + level)
+            {
+                Debug.Log("Mise à jour des étoiles pour le niveau : " + level + " avec " + starCount + " étoiles");
+
+                // Désactiver toutes les étoiles avant la mise à jour
+                foreach (Image starImage in levelButton.starImages)
+                {
+                    starImage.enabled = false;
+                }
+
+                // Activer uniquement les étoiles correspondant au nombre enregistré
+                for (int i = 0; i < starCount; i++)
+                {
+                    levelButton.starImages[i].enabled = true;
+                }
+            }
+        }
+    }
+
+    public void LoadScene(string sceneName)
+    {
+        Time.timeScale = 1;
         SceneManager.LoadScene(sceneName);
     }
 }
+
+
+
+
+
 

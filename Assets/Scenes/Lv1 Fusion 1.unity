@@ -652,6 +652,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 6903282513896556177, guid: 4c380ed4a11ab6e4fa1f794d5f406b0a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8159334494370671458, guid: 4c380ed4a11ab6e4fa1f794d5f406b0a,
         type: 3}
       propertyPath: m_Sprite
@@ -678,6 +683,42 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c380ed4a11ab6e4fa1f794d5f406b0a, type: 3}
+--- !u!114 &500143412 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7148492366784629480, guid: 4c380ed4a11ab6e4fa1f794d5f406b0a,
+    type: 3}
+  m_PrefabInstance: {fileID: 500143411}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &500143413 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5563906043200966049, guid: 4c380ed4a11ab6e4fa1f794d5f406b0a,
+    type: 3}
+  m_PrefabInstance: {fileID: 500143411}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &500143414 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5551765501287887012, guid: 4c380ed4a11ab6e4fa1f794d5f406b0a,
+    type: 3}
+  m_PrefabInstance: {fileID: 500143411}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &545158092
 GameObject:
   m_ObjectHideFlags: 0
@@ -883,6 +924,7 @@ MonoBehaviour:
   timeLimit: 60
   levelManager: {fileID: 0}
   level: 0
+  starRatingManager: {fileID: 0}
 --- !u!4 &778452924
 Transform:
   m_ObjectHideFlags: 0
@@ -1088,6 +1130,7 @@ GameObject:
   - component: {fileID: 1019241924}
   - component: {fileID: 1019241925}
   - component: {fileID: 1019241926}
+  - component: {fileID: 1019241927}
   m_Layer: 0
   m_Name: FusionManager
   m_TagString: Untagged
@@ -1140,8 +1183,9 @@ MonoBehaviour:
   fusionSpawnManager: {fileID: 369835614}
   targetFruitPrefabs:
   - {fileID: 4303899898374082778, guid: ef6eca51a9e9cc14d93f12a5d11fd212, type: 3}
-  requiredFusions: 04000000
+  requiredFusions: 03000000
   timer: 150
+  starRatingManager: {fileID: 1019241927}
   level: 3
 --- !u!61 &1019241926
 BoxCollider2D:
@@ -1189,6 +1233,24 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 4.2384896, y: 6.1966467}
   m_EdgeRadius: 0
+--- !u!114 &1019241927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019241922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688a7715087f27149b442a257d5fbd20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stars:
+  - {fileID: 500143414}
+  - {fileID: 500143413}
+  - {fileID: 500143412}
+  maxTime: 150
+  minTime: 50
 --- !u!1001 &1191796154
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
-using UnityEngine.UI; // Pour l'utilisation des éléments d'interface utilisateur
-using UnityEngine.SceneManagement; // Pour le redémarrage de la scène
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
+using static LevelManager;
 
 public class GameManager : MonoBehaviour
 {
@@ -34,6 +35,9 @@ public class GameManager : MonoBehaviour
     public LevelManager levelManager; // Référence au script LevelManager
     public int level;
 
+    // Ajout de la référence au système de notation par étoiles
+    public StarRatingManager starRatingManager;
+
     void Start()
     {
         // Initialiser le timer
@@ -55,6 +59,9 @@ public class GameManager : MonoBehaviour
         // Réduire le temps
         timer -= Time.deltaTime;
         timerText.text = "Temps restant : " + Mathf.Ceil(timer).ToString() + "s";
+
+        // Mettre à jour les étoiles
+        starRatingManager.UpdateStarRating(timer);
 
         if (timer <= 0)
         {
@@ -125,12 +132,37 @@ public class GameManager : MonoBehaviour
     {
         // Afficher l'interface de victoire
         winUI.SetActive(true);
-        Time.timeScale = 1;
+        Time.timeScale = 0;
+
+        // Déterminer le nombre d'étoiles en fonction du temps restant
+        int stars = starRatingManager.CalculateStars(timer);
+
+        // Récupérer les étoiles actuellement stockées pour ce niveau
+        int currentStars = PlayerPrefs.GetInt("Stars" + level, 0);
+
+        // Comparer les étoiles actuelles avec celles calculées et ne garder que le maximum
+        if (stars > currentStars)
+        {
+            // Mettre à jour les étoiles si le nouveau nombre est supérieur
+            PlayerPrefs.SetInt("Stars" + level, stars);
+        }
+
+        // Enregistrer le niveau comme complété
+        PlayerPrefs.SetInt("isComplete" + level, 1);
 
         // Débloquer le niveau suivant
-        PlayerPrefs.SetInt("isComplete" + level, 1);
-        Debug.Log(PlayerPrefs.GetInt("isComplete1"));
+        int nextLevel = level + 1;
+        if (nextLevel <= LevelManager.Instance.levelButtons.Length)
+        {
+            PlayerPrefs.SetInt("isComplete" + nextLevel, 1);
+        }
+
+        // Appeler la mise à jour de l'affichage des étoiles dans LevelManager
+        LevelManager.Instance.UpdateLevelStars(level, Mathf.Max(stars, currentStars));
     }
+
+
+
 
     public void RestartGame()
     {
@@ -156,6 +188,8 @@ public class GameManager : MonoBehaviour
         fusionSpawnManager.RegisterFusion(obj);
     }
 }
+
+
 
 
 
