@@ -612,6 +612,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1982577574361115464, guid: 4c380ed4a11ab6e4fa1f794d5f406b0a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Lv1 Fusion 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4084906280472027793, guid: 4c380ed4a11ab6e4fa1f794d5f406b0a,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -1641,8 +1646,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 7ae9683a79a0c954f83ae650c5626118, type: 3}
-  m_Resource: {fileID: 8300000, guid: 7ae9683a79a0c954f83ae650c5626118, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9e05cc92c013b9d40af56b6534623fa8, type: 3}
+  m_Resource: {fileID: 8300000, guid: 9e05cc92c013b9d40af56b6534623fa8, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

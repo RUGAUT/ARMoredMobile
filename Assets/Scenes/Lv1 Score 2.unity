@@ -2037,7 +2037,7 @@ MonoBehaviour:
   returnDelay: 0.4
   topBoundaryCollider: {fileID: 139604462}
   fusionSpawnManager: {fileID: 1155190369}
-  targetScore: 250
+  targetScore: 10
   timeLimit: 200
   levelManager: {fileID: 6698744375656552751, guid: 02b9728f63822b444bc4a0584248ab65,
     type: 3}
@@ -2071,11 +2071,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stars:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1635589998}
+  - {fileID: 1692353402}
+  - {fileID: 808086277}
   maxTime: 150
   minTime: 50
+--- !u!114 &808086277 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5536317000956674068, guid: bd210a3396fcf864c8ef5e58c30d0c04,
+    type: 3}
+  m_PrefabInstance: {fileID: 440752482}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &835116826
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4306,8 +4318,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 20052b78290191445abdac58f9c7525c, type: 3}
-  m_Resource: {fileID: 8300000, guid: 20052b78290191445abdac58f9c7525c, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9e05cc92c013b9d40af56b6534623fa8, type: 3}
+  m_Resource: {fileID: 8300000, guid: 9e05cc92c013b9d40af56b6534623fa8, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -4617,6 +4629,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1635589998 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2179033167578214120, guid: bd210a3396fcf864c8ef5e58c30d0c04,
+    type: 3}
+  m_PrefabInstance: {fileID: 440752482}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1682375701
 GameObject:
   m_ObjectHideFlags: 0
@@ -4707,6 +4731,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1692353402 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8112972346216550783, guid: bd210a3396fcf864c8ef5e58c30d0c04,
+    type: 3}
+  m_PrefabInstance: {fileID: 440752482}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1721020638
 GameObject:
   m_ObjectHideFlags: 0

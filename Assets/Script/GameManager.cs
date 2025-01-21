@@ -40,6 +40,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        Time.timeScale = 1;
         // Initialiser le timer
         timer = timeLimit;
 
@@ -188,28 +189,3 @@ public class GameManager : MonoBehaviour
         fusionSpawnManager.RegisterFusion(obj);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

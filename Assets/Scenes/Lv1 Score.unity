@@ -1079,8 +1079,8 @@ MonoBehaviour:
   returnDelay: 0.4
   topBoundaryCollider: {fileID: 139604462}
   fusionSpawnManager: {fileID: 757683974}
-  targetScore: 19
-  timeLimit: 120
+  targetScore: 100
+  timeLimit: 200
   levelManager: {fileID: 6698744375656552751, guid: 02b9728f63822b444bc4a0584248ab65,
     type: 3}
   level: 2
@@ -1116,7 +1116,7 @@ MonoBehaviour:
   - {fileID: 526482779}
   - {fileID: 278452962}
   - {fileID: 1935385876}
-  maxTime: 200
+  maxTime: 150
   minTime: 20
 --- !u!1001 &799127394
 PrefabInstance:
@@ -2273,6 +2273,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 778452923}
+    - target: {fileID: 6036985546808588867, guid: bd210a3396fcf864c8ef5e58c30d0c04,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Lv1 Fusion 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9033283360057396412, guid: bd210a3396fcf864c8ef5e58c30d0c04,
         type: 3}
       propertyPath: m_Pivot.x

@@ -43,6 +43,8 @@ public class FruitFusionGameManager : MonoBehaviour
         InitializeFusionCounts();
         UpdateScoreUI();
         UpdateFusionCountUI();
+
+        Time.timeScale = 1;
     }
 
     void Update()
