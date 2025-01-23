@@ -78,10 +78,12 @@
     <Compile Include="Assets\Script\GameController.cs" />
     <Compile Include="Assets\Script\MoveBetweenPoints.cs" />
     <Compile Include="Assets\Script\MenuInGameManager.cs" />
+    <Compile Include="Assets\FruitFusionLight.cs" />
     <Compile Include="Assets\Script\LevelManager.cs" />
     <Compile Include="Assets\Script\PrefabSpawner.cs" />
     <Compile Include="Assets\PrefabDataSaver.cs" />
     <Compile Include="Assets\Script\WheelRotation.cs" />
+    <Compile Include="Assets\RandomPlatformSpawner.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\VFX\Lana Studio\Hyper Casual FX\Demo\Readme.txt" />

@@ -1,32 +1,32 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class MoveBetweenPoints : MonoBehaviour
 {
     [Header("Points de déplacement")]
-    public Transform pointA; // Point de départ
-    public Transform pointB; // Point d'arrivée
+    public List<Transform> points = new List<Transform>(); // Liste des points de déplacement
 
     [Header("Paramètres de mouvement")]
     [Range(0.1f, 10f)] public float speed = 2f; // Vitesse de déplacement
-    public bool loop = true; // Revenir au point A après avoir atteint le point B
+    public bool loop = true; // Revenir au premier point après le dernier
 
+    private int currentPointIndex = 0; // Index du point actuel
     private Vector3 targetPosition; // Position cible actuelle
-    private bool movingToB = true; // Indique si l'objet se déplace vers B
 
     void Start()
     {
-        if (pointA == null || pointB == null)
+        if (points.Count < 2)
         {
-            Debug.LogError("Les points A et B doivent être définis !");
+            Debug.LogError("Il faut au moins deux points dans la liste !");
             return;
         }
 
-        targetPosition = pointB.position; // Initialisation
+        targetPosition = points[currentPointIndex].position; // Initialisation
     }
 
     void Update()
     {
-        if (pointA == null || pointB == null) return;
+        if (points.Count < 2) return;
 
         // Déplacement vers la position cible
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
@@ -34,29 +34,49 @@ public class MoveBetweenPoints : MonoBehaviour
         // Vérification si l'objet atteint la position cible
         if (Vector3.Distance(transform.position, targetPosition) < 0.1f)
         {
-            if (loop)
+            // Passer au point suivant
+            currentPointIndex++;
+
+            if (currentPointIndex >= points.Count)
             {
-                // Alterne entre les points
-                movingToB = !movingToB;
-                targetPosition = movingToB ? pointB.position : pointA.position;
+                if (loop)
+                {
+                    currentPointIndex = 0; // Revenir au premier point
+                }
+                else
+                {
+                    enabled = false; // Arrêter le mouvement
+                    return;
+                }
+            }
+
+            targetPosition = points[currentPointIndex].position;
+        }
+    }
+
+    // Dessiner les points dans l'éditeur
+    void OnDrawGizmos()
+    {
+        if (points.Count > 1)
+        {
+            Gizmos.color = Color.green;
+            for (int i = 0; i < points.Count; i++)
+            {
+                Gizmos.DrawSphere(points[i].position, 0.1f);
+
+                if (i < points.Count - 1)
+                {
+                    Gizmos.color = Color.yellow;
+                    Gizmos.DrawLine(points[i].position, points[i + 1].position);
+                }
+
+                if (loop && i == points.Count - 1)
+                {
+                    Gizmos.DrawLine(points[i].position, points[0].position);
+                }
             }
         }
     }
-
-    // Dessiner les points A et B dans l'éditeur
-    void OnDrawGizmos()
-    {
-        if (pointA != null && pointB != null)
-        {
-            Gizmos.color = Color.green;
-            Gizmos.DrawSphere(pointA.position, 0.1f);
-
-            Gizmos.color = Color.red;
-            Gizmos.DrawSphere(pointB.position, 0.1f);
-
-            Gizmos.color = Color.yellow;
-            Gizmos.DrawLine(pointA.position, pointB.position);
-        }
-    }
 }
+
 
