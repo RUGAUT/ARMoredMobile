@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "D:\\ARMoredMobile\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|d:\\armoredmobile\\assets\\randomplatformspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|solutionrelative:assets\\randomplatformspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|d:\\armoredmobile\\assets\\script\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|d:\\armoredmobile\\assets\\script\\movebetweenpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\movebetweenpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|d:\\armoredmobile\\assets\\script\\fruitfusiongamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\fruitfusiongamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|d:\\armoredmobile\\assets\\victorydefeateffectsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|solutionrelative:assets\\victorydefeateffectsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,28 +30,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RandomPlatformSpawner.cs",
-              "DocumentMoniker": "D:\\ARMoredMobile\\Assets\\RandomPlatformSpawner.cs",
-              "RelativeDocumentMoniker": "Assets\\RandomPlatformSpawner.cs",
-              "ToolTip": "D:\\ARMoredMobile\\Assets\\RandomPlatformSpawner.cs",
-              "RelativeToolTip": "Assets\\RandomPlatformSpawner.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAuwD4AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "FruitFusionGameManager.cs",
+              "DocumentMoniker": "D:\\ARMoredMobile\\Assets\\Script\\FruitFusionGameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\FruitFusionGameManager.cs",
+              "ToolTip": "D:\\ARMoredMobile\\Assets\\Script\\FruitFusionGameManager.cs",
+              "RelativeToolTip": "Assets\\Script\\FruitFusionGameManager.cs",
+              "ViewState": "AgIAAO4AAAAAAAAAAAAcwCgAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-23T10:20:39.28Z",
+              "WhenOpened": "2025-01-23T14:57:13Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MoveBetweenPoints.cs",
-              "DocumentMoniker": "D:\\ARMoredMobile\\Assets\\Script\\MoveBetweenPoints.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\MoveBetweenPoints.cs",
-              "ToolTip": "D:\\ARMoredMobile\\Assets\\Script\\MoveBetweenPoints.cs",
-              "RelativeToolTip": "Assets\\Script\\MoveBetweenPoints.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAuwFAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "D:\\ARMoredMobile\\Assets\\Script\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\GameManager.cs",
+              "ToolTip": "D:\\ARMoredMobile\\Assets\\Script\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Script\\GameManager.cs",
+              "ViewState": "AgIAAKkAAAAAAAAAAADwvwYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T15:52:59.768Z",
+              "WhenOpened": "2025-01-28T11:54:54.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VictoryDefeatEffectsManager.cs",
+              "DocumentMoniker": "D:\\ARMoredMobile\\Assets\\VictoryDefeatEffectsManager.cs",
+              "RelativeDocumentMoniker": "Assets\\VictoryDefeatEffectsManager.cs",
+              "ToolTip": "D:\\ARMoredMobile\\Assets\\VictoryDefeatEffectsManager.cs",
+              "RelativeToolTip": "Assets\\VictoryDefeatEffectsManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T11:56:11.521Z",
               "EditorCaption": ""
             }
           ]

@@ -1978,8 +1978,8 @@ MonoBehaviour:
   returnDelay: 0.4
   topBoundaryCollider: {fileID: 139604462}
   fusionSpawnManager: {fileID: 1155190369}
-  targetScore: 200
-  timeLimit: 150
+  targetScore: 250
+  timeLimit: 200
   levelManager: {fileID: 6698744375656552751, guid: 02b9728f63822b444bc4a0584248ab65,
     type: 3}
   level: 5
@@ -2015,8 +2015,8 @@ MonoBehaviour:
   - {fileID: 511485394}
   - {fileID: 511485393}
   - {fileID: 511485392}
-  maxTime: 100
-  minTime: 20
+  maxTime: 150
+  minTime: 30
 --- !u!1 &818282661 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2161217698164681931, guid: bd210a3396fcf864c8ef5e58c30d0c04,

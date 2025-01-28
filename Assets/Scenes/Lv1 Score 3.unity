@@ -1067,8 +1067,8 @@ MonoBehaviour:
   returnDelay: 0.4
   topBoundaryCollider: {fileID: 139604462}
   fusionSpawnManager: {fileID: 1155190369}
-  targetScore: 200
-  timeLimit: 150
+  targetScore: 500
+  timeLimit: 200
   levelManager: {fileID: 6698744375656552751, guid: 02b9728f63822b444bc4a0584248ab65,
     type: 3}
   level: 8
@@ -1270,8 +1270,8 @@ Transform:
   m_GameObject: {fileID: 956660663}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.9374, y: -0.5627, z: 6.314826}
-  m_LocalScale: {x: 0.3171976, y: 0.23218785, z: 1}
+  m_LocalPosition: {x: -1.038, y: -1.3299, z: 6.314826}
+  m_LocalScale: {x: 0.45862302, y: 1.0190724, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1288,8 +1288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8b5d1e8012425442b171a8cca28b78a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointA: {fileID: 1544188262}
-  pointB: {fileID: 590633004}
+  points: []
   speed: 1.5
   loop: 1
 --- !u!61 &956660667
@@ -1661,6 +1660,30 @@ PrefabInstance:
       propertyPath: spawnZoneCollider
       value: 
       objectReference: {fileID: 1628611829}
+    - target: {fileID: 4808614177698181487, guid: 24ac92d414a33b54885884759db0e6ce,
+        type: 3}
+      propertyPath: 'fruits.Array.data[0]'
+      value: 
+      objectReference: {fileID: 980705122428091192, guid: dddbc065c43e5544d996273da87e5d78,
+        type: 3}
+    - target: {fileID: 4808614177698181487, guid: 24ac92d414a33b54885884759db0e6ce,
+        type: 3}
+      propertyPath: 'fruits.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1270956019474222887, guid: 6a804fd2eee109b47bafc3242d8e6669,
+        type: 3}
+    - target: {fileID: 4808614177698181487, guid: 24ac92d414a33b54885884759db0e6ce,
+        type: 3}
+      propertyPath: 'fruits.Array.data[2]'
+      value: 
+      objectReference: {fileID: 4060837610658536229, guid: d373d462a4f17b349b1afc24247d402b,
+        type: 3}
+    - target: {fileID: 4808614177698181487, guid: 24ac92d414a33b54885884759db0e6ce,
+        type: 3}
+      propertyPath: 'fruits.Array.data[3]'
+      value: 
+      objectReference: {fileID: 1248378195861516425, guid: 308776cab70f3fa41ad4710238982eec,
+        type: 3}
     - target: {fileID: 4808614177698181487, guid: 24ac92d414a33b54885884759db0e6ce,
         type: 3}
       propertyPath: forbiddenZoneCollider

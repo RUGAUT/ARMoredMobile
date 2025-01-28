@@ -63,27 +63,28 @@
   <ItemGroup>
     <Compile Include="Assets\Script\BlinkAndDestroy.cs" />
     <Compile Include="Assets\Script\ScoreAndBoundaryManager.cs" />
+    <Compile Include="Assets\Script\RandomPlatformSpawner.cs" />
+    <Compile Include="Assets\VictoryDefeatEffectsManager.cs" />
     <Compile Include="Assets\Script\FruitFusionGameManager.cs" />
     <Compile Include="Assets\Script\DifficultyManager.cs" />
     <Compile Include="Assets\Script\PauseGame.cs" />
     <Compile Include="Assets\Script\ColliderManager.cs" />
     <Compile Include="Assets\Script\SpawnPrefabOnEmpty.cs" />
-    <Compile Include="Assets\StarRatingManager.cs" />
     <Compile Include="Assets\Script\LoadingScreen.cs" />
     <Compile Include="Assets\Script\FruitLogic.cs" />
     <Compile Include="Assets\Script\FruitPlacer.cs" />
+    <Compile Include="Assets\Script\FruitFusionLight.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Script\FruitBehaviour.cs" />
     <Compile Include="Assets\Script\GameManager.cs" />
     <Compile Include="Assets\Script\GameController.cs" />
     <Compile Include="Assets\Script\MoveBetweenPoints.cs" />
     <Compile Include="Assets\Script\MenuInGameManager.cs" />
-    <Compile Include="Assets\FruitFusionLight.cs" />
+    <Compile Include="Assets\Script\PrefabDataSaver.cs" />
     <Compile Include="Assets\Script\LevelManager.cs" />
     <Compile Include="Assets\Script\PrefabSpawner.cs" />
-    <Compile Include="Assets\PrefabDataSaver.cs" />
     <Compile Include="Assets\Script\WheelRotation.cs" />
-    <Compile Include="Assets\RandomPlatformSpawner.cs" />
+    <Compile Include="Assets\Script\StarRatingManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\VFX\Lana Studio\Hyper Casual FX\Demo\Readme.txt" />

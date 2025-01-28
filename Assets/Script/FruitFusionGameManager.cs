@@ -25,6 +25,9 @@ public class FruitFusionGameManager : MonoBehaviour
     public List<GameObject> targetFruitPrefabs; // Liste des prefabs de fruits cibles
     public List<int> requiredFusions; // Liste des fusions nécessaires par fruit
 
+    public List<ParticleSystem> fusionVFXPrefabs; // Liste des VFX à jouer pour chaque fruit fusionné
+    public List<Transform> fusionVFXSpawnPoints; // Liste des points où les VFX vont apparaître
+
     private Dictionary<string, int> fusionCounts = new Dictionary<string, int>(); // Dictionnaire pour les fusions par type
     private HashSet<GameObject> fusedFruits = new HashSet<GameObject>(); // Garde une trace des fusions déjà comptées
 
@@ -50,7 +53,7 @@ public class FruitFusionGameManager : MonoBehaviour
     void Update()
     {
         timer -= Time.deltaTime;
-        timerText.text = "Temps restant : " + Mathf.Ceil(timer).ToString() + "s";
+        timerText.text = "Temps : " + Mathf.Ceil(timer).ToString() + "s";
 
         if (timer <= 0)
         {
@@ -94,14 +97,25 @@ public class FruitFusionGameManager : MonoBehaviour
 
             if (fusionCounts.ContainsKey(fruitTag))
             {
-                fusionCounts[fruitTag]++;
-                fusedFruits.Add(other.gameObject);
-                UpdateFusionCountUI();
-
-                // Vérifier la condition de victoire globale
-                if (CheckAllFusionsComplete())
+                // Vérifier si la fusion pour ce fruit a déjà atteint le maximum requis
+                int index = targetFruitPrefabs.FindIndex(fruit => fruit.tag == fruitTag);
+                if (index != -1 && fusionCounts[fruitTag] < requiredFusions[index])
                 {
-                    Win();
+                    fusionCounts[fruitTag]++;
+                    fusedFruits.Add(other.gameObject);
+                    UpdateFusionCountUI();
+
+                    // **Jouer la VFX correspondante ici, quand la fusion atteint la quantité requise**
+                    if (fusionCounts[fruitTag] == requiredFusions[index])
+                    {
+                        PlayFusionVFX(index);
+                    }
+
+                    // Vérifier la condition de victoire globale
+                    if (CheckAllFusionsComplete())
+                    {
+                        Win();
+                    }
                 }
             }
         }
@@ -152,7 +166,7 @@ public class FruitFusionGameManager : MonoBehaviour
             if (i < targetFruitPrefabs.Count)
             {
                 string fruitTag = targetFruitPrefabs[i].tag;
-                fusionCountTexts[i].text = $"{fruitTag} : {fusionCounts[fruitTag]}/{requiredFusions[i]}";
+                fusionCountTexts[i].text = $"{fusionCounts[fruitTag]}/{requiredFusions[i]}";
             }
         }
     }
@@ -170,8 +184,11 @@ public class FruitFusionGameManager : MonoBehaviour
         return true;
     }
 
-    void Win()
+    public void Win()
     {
+        // Appeler les effets de victoire avant de continuer
+        FindObjectOfType<VictoryDefeatEffectsManager>().PlayVictoryEffects();
+
         // Afficher l'interface de victoire
         winUI.SetActive(true);
         Time.timeScale = 0;
@@ -201,10 +218,9 @@ public class FruitFusionGameManager : MonoBehaviour
 
         // Appeler la mise à jour de l'affichage des étoiles dans LevelManager
         LevelManager.Instance.UpdateLevelStars(level, Mathf.Max(stars, currentStars));
+
+        
     }
-
-
-
 
     public void RestartGame()
     {
@@ -214,21 +230,48 @@ public class FruitFusionGameManager : MonoBehaviour
         timer = 9999999f;
     }
 
-    void GameOver()
+    public void GameOver()
     {
+        // Appeler les effets de défaite avant de continuer
+        FindObjectOfType<VictoryDefeatEffectsManager>().PlayDefeatEffects();
+
         if (isGameOver) return; // Empêche d'appeler plusieurs fois
         isGameOver = true;
 
         gameOverUI.SetActive(true);
         Time.timeScale = 0;
         // Arrêter toutes les interactions sans modifier Time.timeScale
+
+        
     }
 
     public void DisplayVfx(GameObject obj)
     {
         fusionSpawnManager.RegisterFusion(obj);
     }
+
+    // Méthode pour jouer le VFX de fusion
+    private void PlayFusionVFX(int index)
+    {
+        if (index >= 0 && index < fusionVFXPrefabs.Count && index < fusionVFXSpawnPoints.Count)
+        {
+            // Instancier et jouer la VFX à la position du point de fusion
+            Transform spawnPoint = fusionVFXSpawnPoints[index];
+            ParticleSystem fusionVFX = Instantiate(fusionVFXPrefabs[index], spawnPoint.position, Quaternion.identity);
+            fusionVFX.Play();
+
+            // Détruire la VFX après sa durée de vie
+            Destroy(fusionVFX.gameObject, fusionVFX.main.duration);
+        }
+        else
+        {
+            Debug.LogWarning("Aucun VFX n'est défini pour l'index " + index);
+        }
+    }
 }
+
+
+
 
 
 

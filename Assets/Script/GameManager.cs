@@ -59,7 +59,7 @@ public class GameManager : MonoBehaviour
     {
         // Réduire le temps
         timer -= Time.deltaTime;
-        timerText.text = "Temps restant : " + Mathf.Ceil(timer).ToString() + "s";
+        timerText.text = "Temps : " + Mathf.Ceil(timer).ToString() + "s";
 
         // Mettre à jour les étoiles
         starRatingManager.UpdateStarRating(timer);
