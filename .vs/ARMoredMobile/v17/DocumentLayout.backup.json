@@ -1,20 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\ARMoredMobile\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|d:\\armoredmobile\\assets\\victorydefeateffectsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|solutionrelative:assets\\victorydefeateffectsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|d:\\armoredmobile\\assets\\script\\fruitfusiongamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\fruitfusiongamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|d:\\armoredmobile\\assets\\script\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -22,50 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FruitFusionGameManager.cs",
-              "DocumentMoniker": "D:\\ARMoredMobile\\Assets\\Script\\FruitFusionGameManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\FruitFusionGameManager.cs",
-              "ToolTip": "D:\\ARMoredMobile\\Assets\\Script\\FruitFusionGameManager.cs",
-              "RelativeToolTip": "Assets\\Script\\FruitFusionGameManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-23T14:57:13Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GameManager.cs",
-              "DocumentMoniker": "D:\\ARMoredMobile\\Assets\\Script\\GameManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\GameManager.cs",
-              "ToolTip": "D:\\ARMoredMobile\\Assets\\Script\\GameManager.cs",
-              "RelativeToolTip": "Assets\\Script\\GameManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T11:54:54.365Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "VictoryDefeatEffectsManager.cs",
-              "DocumentMoniker": "D:\\ARMoredMobile\\Assets\\VictoryDefeatEffectsManager.cs",
-              "RelativeDocumentMoniker": "Assets\\VictoryDefeatEffectsManager.cs",
-              "ToolTip": "D:\\ARMoredMobile\\Assets\\VictoryDefeatEffectsManager.cs",
-              "RelativeToolTip": "Assets\\VictoryDefeatEffectsManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T11:56:11.521Z",
-              "EditorCaption": ""
             }
           ]
         }

@@ -40,6 +40,8 @@ public class FruitFusionGameManager : MonoBehaviour
     public StarRatingManager starRatingManager; // Gestionnaire des étoiles
     public int level;
 
+    public bool canContinueWin = false;
+    private bool isGameFinish = false;
     void Start()
     {
         initialTopBoundaryPosition = topBoundary.position;
@@ -52,6 +54,7 @@ public class FruitFusionGameManager : MonoBehaviour
 
     void Update()
     {
+        if (isGameOver || isGameFinish) return;
         timer -= Time.deltaTime;
         timerText.text = "Temps : " + Mathf.Ceil(timer).ToString() + "s";
 
@@ -73,7 +76,7 @@ public class FruitFusionGameManager : MonoBehaviour
         }
 
         // Mettre à jour les étoiles
-        starRatingManager.UpdateStarRating(timer);
+        //starRatingManager.UpdateStarRating(timer);
 
         // Vérifier si un fruit touche le topBoundary pour Game Over
         List<Collider2D> gameOverFruits = new List<Collider2D>();
@@ -114,7 +117,7 @@ public class FruitFusionGameManager : MonoBehaviour
                     // Vérifier la condition de victoire globale
                     if (CheckAllFusionsComplete())
                     {
-                        Win();
+                        StartCoroutine(Win());
                     }
                 }
             }
@@ -184,18 +187,18 @@ public class FruitFusionGameManager : MonoBehaviour
         return true;
     }
 
-    public void Win()
+    IEnumerator Win()
     {
+        isGameFinish = true;
         // Appeler les effets de victoire avant de continuer
-        FindObjectOfType<VictoryDefeatEffectsManager>().PlayVictoryEffects();
-
-        // Afficher l'interface de victoire
+        GetComponent<VictoryDefeatEffectsManager>().PlayVictoryEffects();
         winUI.SetActive(true);
-        Time.timeScale = 0;
+        yield return new WaitUntil( () => canContinueWin == true);
+        // Afficher l'interface de victoire
 
         // Déterminer le nombre d'étoiles en fonction du temps restant
         int stars = starRatingManager.CalculateStars(timer);
-
+        starRatingManager.UpdateStarRating(timer);
         // Récupérer les étoiles actuellement stockées pour ce niveau
         int currentStars = PlayerPrefs.GetInt("Stars" + level, 0);
 
@@ -207,14 +210,15 @@ public class FruitFusionGameManager : MonoBehaviour
         }
 
         // Enregistrer le niveau comme complété
+        PlayerPrefs.SetInt("LevelComplete", level);
         PlayerPrefs.SetInt("isComplete" + level, 1);
 
         // Débloquer le niveau suivant
-        int nextLevel = level + 1;
-        if (nextLevel <= LevelManager.Instance.levelButtons.Length)
-        {
-            PlayerPrefs.SetInt("isComplete" + nextLevel, 1);
-        }
+        //int nextLevel = level + 1;
+        //if (nextLevel <= LevelManager.Instance.levelButtons.Length)
+        //{
+        //    PlayerPrefs.SetInt("isComplete" + nextLevel, 1);
+        //}
 
         // Appeler la mise à jour de l'affichage des étoiles dans LevelManager
         LevelManager.Instance.UpdateLevelStars(level, Mathf.Max(stars, currentStars));
@@ -233,7 +237,7 @@ public class FruitFusionGameManager : MonoBehaviour
     public void GameOver()
     {
         // Appeler les effets de défaite avant de continuer
-        FindObjectOfType<VictoryDefeatEffectsManager>().PlayDefeatEffects();
+        GetComponent<VictoryDefeatEffectsManager>().PlayDefeatEffects();
 
         if (isGameOver) return; // Empêche d'appeler plusieurs fois
         isGameOver = true;

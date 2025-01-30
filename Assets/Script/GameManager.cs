@@ -38,6 +38,9 @@ public class GameManager : MonoBehaviour
     // Ajout de la référence au système de notation par étoiles
     public StarRatingManager starRatingManager;
 
+    public bool canContinueWin = false;
+    private bool isGameFinish = false;
+
     void Start()
     {
         Time.timeScale = 1;
@@ -57,6 +60,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        if (isGameOver || isGameFinish) return; // Arrête la logique si le jeu est en pause
         // Réduire le temps
         timer -= Time.deltaTime;
         timerText.text = "Temps : " + Mathf.Ceil(timer).ToString() + "s";
@@ -94,10 +98,10 @@ public class GameManager : MonoBehaviour
         // Vérifier si le joueur a atteint le score cible
         if (currentScore >= targetScore)
         {
-            Win();
+            StartCoroutine(Win());
         }
 
-        if (isGameOver) return; // Arrête la logique si le jeu est en pause
+        
     }
 
     // Coroutine pour déplacer le topBoundary horizontalement
@@ -129,11 +133,15 @@ public class GameManager : MonoBehaviour
         currentScoreText.text = "Score actuel : " + currentScore.ToString();
     }
 
-    void Win()
+    IEnumerator Win()
     {
+        isGameFinish = true;
+        GetComponent<VictoryDefeatEffectsManager>().PlayVictoryEffects();
         // Afficher l'interface de victoire
         winUI.SetActive(true);
-        Time.timeScale = 0;
+        yield return new WaitUntil(() => canContinueWin == true);
+
+        //Time.timeScale = 0;
 
         // Déterminer le nombre d'étoiles en fonction du temps restant
         int stars = starRatingManager.CalculateStars(timer);
@@ -149,17 +157,19 @@ public class GameManager : MonoBehaviour
         }
 
         // Enregistrer le niveau comme complété
+        PlayerPrefs.SetInt("LevelComplete", level);
         PlayerPrefs.SetInt("isComplete" + level, 1);
 
         // Débloquer le niveau suivant
-        int nextLevel = level + 1;
-        if (nextLevel <= LevelManager.Instance.levelButtons.Length)
-        {
-            PlayerPrefs.SetInt("isComplete" + nextLevel, 1);
-        }
-
+        //int nextLevel = level + 1;
+        //if (nextLevel <= LevelManager.Instance.levelButtons.Length)
+        //{
+        //    PlayerPrefs.SetInt("isComplete" + nextLevel, 1);
+        //}
+        
         // Appeler la mise à jour de l'affichage des étoiles dans LevelManager
         LevelManager.Instance.UpdateLevelStars(level, Mathf.Max(stars, currentStars));
+        
     }
 
 
@@ -176,6 +186,7 @@ public class GameManager : MonoBehaviour
 
     void GameOver()
     {
+        GetComponent<VictoryDefeatEffectsManager>().PlayDefeatEffects();
         if (isGameOver) return; // Empêche d'appeler plusieurs fois
         isGameOver = true;
 

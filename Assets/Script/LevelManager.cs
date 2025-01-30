@@ -22,7 +22,6 @@ public class LevelManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
         }
         else
         {
@@ -32,6 +31,16 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
+       
+        levelButtons = LevelButtonsUI.Instance.levelButtons;
+        int actualLevel = PlayerPrefs.GetInt("LevelComplete");
+        int nextLevel = actualLevel + 1;
+        if (nextLevel <= levelButtons.Length)
+        {
+            PlayerPrefs.SetInt("isComplete" + nextLevel, 1);
+        }
+        if (levelButtons == null)
+            return;
         foreach (LevelButton levelButton in levelButtons)
         {
             // Désactiver toutes les étoiles au début

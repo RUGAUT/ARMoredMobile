@@ -63,8 +63,10 @@
   <ItemGroup>
     <Compile Include="Assets\Script\BlinkAndDestroy.cs" />
     <Compile Include="Assets\Script\ScoreAndBoundaryManager.cs" />
+    <Compile Include="Assets\Script\LevelButtonsUI.cs" />
+    <Compile Include="Assets\Script\LevelImageManager.cs" />
     <Compile Include="Assets\Script\RandomPlatformSpawner.cs" />
-    <Compile Include="Assets\VictoryDefeatEffectsManager.cs" />
+    <Compile Include="Assets\PanelController.cs" />
     <Compile Include="Assets\Script\FruitFusionGameManager.cs" />
     <Compile Include="Assets\Script\DifficultyManager.cs" />
     <Compile Include="Assets\Script\PauseGame.cs" />
@@ -78,6 +80,7 @@
     <Compile Include="Assets\Script\FruitBehaviour.cs" />
     <Compile Include="Assets\Script\GameManager.cs" />
     <Compile Include="Assets\Script\GameController.cs" />
+    <Compile Include="Assets\Script\VictoryDefeatEffectsManager.cs" />
     <Compile Include="Assets\Script\MoveBetweenPoints.cs" />
     <Compile Include="Assets\Script\MenuInGameManager.cs" />
     <Compile Include="Assets\Script\PrefabDataSaver.cs" />
