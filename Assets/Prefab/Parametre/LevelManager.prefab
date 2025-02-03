@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8037493085622999218}
   - component: {fileID: 6698744375656552751}
+  - component: {fileID: 2192129559611338310}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -47,10 +48,224 @@ MonoBehaviour:
   levelButtons:
   - button: {fileID: 0}
     levelKey: isComplete1
-    sceneName: LV1 Score
+    sceneName: Lv1 Fusion
+    starImages:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
   - button: {fileID: 0}
-    levelKey: isComplete1
-    sceneName: LV1 Fusion 1
+    levelKey: isComplete2
+    sceneName: Lv1 Score
+    starImages:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
   - button: {fileID: 0}
-    levelKey: isComplete1
+    levelKey: isComplete3
+    sceneName: Lv1 Fusion 1
+    starImages:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  - button: {fileID: 0}
+    levelKey: isComplete4
     sceneName: Lv1 Fusion 2
+    starImages:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  - button: {fileID: 0}
+    levelKey: isComplete5
+    sceneName: Lv1 Score 1
+    starImages:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  - button: {fileID: 0}
+    levelKey: isComplete6
+    sceneName: Lv1 Fusion 3
+    starImages:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  - button: {fileID: 0}
+    levelKey: isComplete7
+    sceneName: Lv1 Score 2
+    starImages:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  - button: {fileID: 0}
+    levelKey: isComplete8
+    sceneName: Lv1 Score 3
+    starImages:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  - button: {fileID: 0}
+    levelKey: isComplete9
+    sceneName: Lv1 Fusion 4
+    starImages:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  - button: {fileID: 0}
+    levelKey: isComplete9
+    sceneName: Lv1 Score 4
+    starImages:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+--- !u!114 &2192129559611338310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8095844161629773626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3df3826bc2888e4399a3e68a059103b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelButtons:
+  - button: {fileID: 0}
+    levelKey: isComplete1
+    sceneName: Lv1 Fusion
+    starImages:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  - button: {fileID: 0}
+    levelKey: isComplete2
+    sceneName: Lv1 Score
+    starImages:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  - button: {fileID: 0}
+    levelKey: isComplete3
+    sceneName: Lv1 Fusion 1
+    starImages:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  - button: {fileID: 0}
+    levelKey: isComplete4
+    sceneName: Lv1 Fusion 2
+    starImages:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  - button: {fileID: 0}
+    levelKey: isComplete5
+    sceneName: Lv1 Score 1
+    starImages:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  - button: {fileID: 0}
+    levelKey: isComplete6
+    sceneName: Lv1 Fusion 3
+    starImages:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  - button: {fileID: 0}
+    levelKey: isComplete7
+    sceneName: Lv1 Score 2
+    starImages:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  - button: {fileID: 0}
+    levelKey: isComplete8
+    sceneName: Lv1 Score 3
+    starImages:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  - button: {fileID: 0}
+    levelKey: isComplete9
+    sceneName: Lv1 Fusion 4
+    starImages:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  - button: {fileID: 0}
+    levelKey: isComplete10
+    sceneName: Lv1 Score 4
+    starImages:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  - button: {fileID: 0}
+    levelKey: isComplete11
+    sceneName: Lv1 Fusion 5
+    starImages:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  - button: {fileID: 0}
+    levelKey: isComplete12
+    sceneName: Lv1 Fusion 6
+    starImages:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  - button: {fileID: 0}
+    levelKey: isComplete13
+    sceneName: Lv1 Fusion 7
+    starImages:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  - button: {fileID: 0}
+    levelKey: isComplete14
+    sceneName: Lv1 Score 5
+    starImages:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  - button: {fileID: 0}
+    levelKey: isComplete15
+    sceneName: Lv1 Score 6
+    starImages:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  - button: {fileID: 0}
+    levelKey: isComplete16
+    sceneName: Lv1 Fusion 8
+    starImages:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  - button: {fileID: 0}
+    levelKey: isComplete17
+    sceneName: Lv1 Fusion 9
+    starImages:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  - button: {fileID: 0}
+    levelKey: isComplete18
+    sceneName: Lv1 Fusion 10
+    starImages:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  - button: {fileID: 0}
+    levelKey: isComplete19
+    sceneName: Lv1 Fusion 11
+    starImages:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  - button: {fileID: 0}
+    levelKey: isComplete20
+    sceneName: Lv1 Fusion 12
+    starImages:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}

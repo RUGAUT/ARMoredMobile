@@ -892,7 +892,6 @@ MonoBehaviour:
   - {fileID: 1270956019474222887, guid: 5dd706d36eee1ca4b8f5a447410039b4, type: 3}
   - {fileID: 980705122428091192, guid: 24e225591a4291c4cad14cf42c7f14d3, type: 3}
   - {fileID: 1248378195861516425, guid: b37bed0bc5bf088498e20ac5079ee6e4, type: 3}
-  - {fileID: 5417119271977574922, guid: 85b6da9768bb31a4e9f538cd6f7fe6e5, type: 3}
   nextFruitPosition: {fileID: 1604257389}
   forbiddenZoneCollider: {fileID: 995495894}
   spawnZoneCollider: {fileID: 1628611829}
@@ -904,7 +903,6 @@ MonoBehaviour:
   - 0.5
   - 0.5
   - 0.5
-  - 0.2
 --- !u!4 &613026310
 Transform:
   m_ObjectHideFlags: 0
@@ -2869,6 +2867,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 397634808262339247, guid: bd210a3396fcf864c8ef5e58c30d0c04,
+        type: 3}
+      propertyPath: m_Text
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194878676022546247, guid: bd210a3396fcf864c8ef5e58c30d0c04,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 12.000244
+      objectReference: {fileID: 0}
     - target: {fileID: 2457396941074414041, guid: bd210a3396fcf864c8ef5e58c30d0c04,
         type: 3}
       propertyPath: m_Name
@@ -2902,7 +2910,17 @@ PrefabInstance:
     - target: {fileID: 8029976705343731117, guid: bd210a3396fcf864c8ef5e58c30d0c04,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489536966788132348, guid: bd210a3396fcf864c8ef5e58c30d0c04,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -363
+      objectReference: {fileID: 0}
+    - target: {fileID: 8606210507319989408, guid: bd210a3396fcf864c8ef5e58c30d0c04,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -366
       objectReference: {fileID: 0}
     - target: {fileID: 9033283360057396412, guid: bd210a3396fcf864c8ef5e58c30d0c04,
         type: 3}
@@ -3018,12 +3036,12 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 613026310}
   - {fileID: 799127394}
   - {fileID: 1431533788070309225}
   - {fileID: 619394802}
   - {fileID: 778452924}
   - {fileID: 1000873601}
-  - {fileID: 613026310}
   - {fileID: 1682375704}
   - {fileID: 1628611831}
   - {fileID: 139604464}

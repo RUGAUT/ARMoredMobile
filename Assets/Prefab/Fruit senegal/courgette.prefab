@@ -105,7 +105,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95f293789f959234b982a47ddd67a693, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextFruitPrefab: {fileID: 0}
+  nextFruitPrefab: {fileID: 4060837610658536229, guid: a442cbd81290b8541bb2a95e6b2aba89,
+    type: 3}
   points: 20
   fusionVFXPrefab: {fileID: 8796090852137639844, guid: 8021b2e6c524d254e8d52422670d2139,
     type: 3}

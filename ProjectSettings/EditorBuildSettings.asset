@@ -41,6 +41,36 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lv1 Score 4.unity
     guid: 3ce34e695e466224798f1b870aa4d987
+  - enabled: 1
+    path: Assets/Scenes/Lv1 Fusion 5.unity
+    guid: 4ee728ac66a2ed64c8ed6a8eb0675beb
+  - enabled: 1
+    path: Assets/Scenes/Lv1 Fusion 6.unity
+    guid: 8d9957bebb9beb848a6f2ecb0a121a65
+  - enabled: 1
+    path: Assets/Scenes/Lv1 Fusion 7.unity
+    guid: 2eb8ac2df238f274496ec8242d7bb682
+  - enabled: 1
+    path: Assets/Scenes/Lv1 Score 5.unity
+    guid: 4572dee5dd56d9b499f146129e7f2623
+  - enabled: 1
+    path: Assets/Scenes/Lv1 Score 6.unity
+    guid: 4645ab6bf6146b945be7a7b1fe266995
+  - enabled: 1
+    path: Assets/Scenes/Lv1 Fusion 8.unity
+    guid: 309d7aee377a607468cb433d3dccfddf
+  - enabled: 1
+    path: Assets/Scenes/Lv1 Fusion 9.unity
+    guid: f65e71372fb3c024c966b7fa23bc301c
+  - enabled: 1
+    path: Assets/Scenes/Lv1 Fusion 10.unity
+    guid: 143c17095d6d4c946ab1e839aece4686
+  - enabled: 1
+    path: Assets/Scenes/Lv1 Fusion 11.unity
+    guid: d8970fd6d748bd942b43c8dad642d889
+  - enabled: 1
+    path: Assets/Scenes/Lv1 Fusion 12.unity
+    guid: 63bfdd8e10b44d944b04ccb5b32a5d1f
   m_configObjects:
     com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000,
       guid: 23adce668f7c32e41b8ea8ba2e5473be, type: 2}

@@ -4789,7 +4789,6 @@ MonoBehaviour:
   - {fileID: 1270956019474222887, guid: 5dd706d36eee1ca4b8f5a447410039b4, type: 3}
   - {fileID: 980705122428091192, guid: 24e225591a4291c4cad14cf42c7f14d3, type: 3}
   - {fileID: 1248378195861516425, guid: b37bed0bc5bf088498e20ac5079ee6e4, type: 3}
-  - {fileID: 5417119271977574922, guid: 85b6da9768bb31a4e9f538cd6f7fe6e5, type: 3}
   nextFruitPosition: {fileID: 1604257389}
   forbiddenZoneCollider: {fileID: 995495894}
   spawnZoneCollider: {fileID: 1628611829}
@@ -4801,7 +4800,6 @@ MonoBehaviour:
   - 0.5
   - 0.5
   - 0.5
-  - 0.2
 --- !u!4 &1797388813
 Transform:
   m_ObjectHideFlags: 0

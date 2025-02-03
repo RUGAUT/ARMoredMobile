@@ -55,6 +55,22 @@ public class FruitPlacer : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) && fruitCooldownTimer <= 0) // Vérifier si le cooldown est terminé
         {
+            Vector3 mousePosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
+            mousePosition.z = 0;
+
+            // Vérifier si le clic est sur un Collider2D donné
+            Collider2D clickedCollider = Physics2D.OverlapPoint(mousePosition);
+
+            if (clickedCollider != null)
+            {
+                if (clickedCollider != forbiddenZoneCollider && clickedCollider != spawnZoneCollider)
+                {
+                    // Si le clic est sur un autre collider, spawn un fruit sous la souris dans la zone de spawn
+                    SpawnFruitAtMousePosition(mousePosition);
+                    return;
+                }
+            }
+
             if (currentFruit == null)
             {
                 SpawnFruitAtMouse();
@@ -72,6 +88,32 @@ public class FruitPlacer : MonoBehaviour
             ReleaseFruit();
         }
     }
+
+    void SpawnFruitAtMousePosition(Vector3 mousePosition)
+    {
+        // Limiter la position du fruit à la zone de spawn
+        Vector3 clampedPosition = ClampPositionToSpawnZone(mousePosition);
+
+        // Instancier un fruit aléatoire à la position limitée
+        int randomIndex = GetFruitIndexByRarity();
+        Instantiate(fruits[randomIndex], clampedPosition, Quaternion.identity);
+
+        // Réinitialiser le cooldown
+        fruitCooldownTimer = fruitCooldown;
+    }
+
+    Vector3 ClampPositionToSpawnZone(Vector3 position)
+    {
+        // Obtenir les limites de la zone de spawn
+        Bounds spawnBounds = spawnZoneCollider.bounds;
+
+        // Limiter la position en X et Y pour qu'elle reste dans les limites de la zone de spawn
+        float clampedX = Mathf.Clamp(position.x, spawnBounds.min.x, spawnBounds.max.x);
+        float clampedY = Mathf.Clamp(position.y, spawnBounds.min.y, spawnBounds.max.y);
+
+        return new Vector3(clampedX, clampedY, position.z);
+    }
+
 
     void HandleFruitSpawnTimer()
     {
@@ -132,6 +174,24 @@ public class FruitPlacer : MonoBehaviour
                 Debug.Log("Position invalide, fruit non placé.");
             }
         }
+    }
+
+    void SpawnFruitInSpawnZone()
+    {
+        // Générer une position aléatoire dans la zone de spawn
+        Bounds spawnBounds = spawnZoneCollider.bounds;
+        Vector3 randomPosition = new Vector3(
+            Random.Range(spawnBounds.min.x, spawnBounds.max.x),
+            Random.Range(spawnBounds.min.y, spawnBounds.max.y),
+            0
+        );
+
+        // Instancier un fruit aléatoire
+        int randomIndex = GetFruitIndexByRarity();
+        Instantiate(fruits[randomIndex], randomPosition, Quaternion.identity);
+
+        // Réinitialiser le cooldown
+        fruitCooldownTimer = fruitCooldown;
     }
 
     void DragFruitToMouse()
@@ -217,7 +277,6 @@ public class FruitPlacer : MonoBehaviour
         }
     }
 
-    // Choisir un fruit en fonction des probabilités de rareté
     int GetFruitIndexByRarity()
     {
         float totalChance = 0f;
@@ -254,6 +313,7 @@ public class FruitPlacer : MonoBehaviour
         return spawnZoneCollider.bounds.Contains(position);
     }
 }
+
 
 
 

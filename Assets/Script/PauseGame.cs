@@ -13,7 +13,7 @@ public class PauseGame : MonoBehaviour
     private bool isPaused = false;
 
     // Variable pour garder en mémoire le volume initial
-    private float initialVolume;
+   // private float initialVolume;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +22,7 @@ public class PauseGame : MonoBehaviour
         pauseButton.onClick.AddListener(TogglePause);
 
         // Sauvegarde du volume initial du son
-        initialVolume = AudioListener.volume;
+       // initialVolume = AudioListener.volume;
 
         // Cache le panel au début
         if (pausePanel != null)
@@ -38,7 +38,7 @@ public class PauseGame : MonoBehaviour
         {
             // Reprend le jeu, le son et cache le Panel
             Time.timeScale = 1;
-            AudioListener.volume = initialVolume;  // Restaure le volume initial
+            //AudioListener.volume = initialVolume;  // Restaure le volume initial
             if (pausePanel != null)
             {
                 pausePanel.SetActive(false);  // Cache le panel
@@ -49,7 +49,7 @@ public class PauseGame : MonoBehaviour
         {
             // Met le jeu, le son en pause et affiche le Panel
             Time.timeScale = 0;
-            AudioListener.volume = 0;  // Coupe le son
+            //AudioListener.volume = 0;  // Coupe le son
             if (pausePanel != null)
             {
                 pausePanel.SetActive(true);  // Affiche le panel

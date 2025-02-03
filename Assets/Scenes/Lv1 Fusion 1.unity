@@ -731,6 +731,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 465466495342849896, guid: 4c380ed4a11ab6e4fa1f794d5f406b0a,
+        type: 3}
+      propertyPath: m_Text
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1982577574361115464, guid: 4c380ed4a11ab6e4fa1f794d5f406b0a,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
@@ -740,6 +745,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -177
+      objectReference: {fileID: 0}
+    - target: {fileID: 3549081335512022167, guid: 4c380ed4a11ab6e4fa1f794d5f406b0a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3642851513892128052, guid: 4c380ed4a11ab6e4fa1f794d5f406b0a,
         type: 3}
@@ -882,6 +892,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &500143415 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7742119202343445499, guid: 4c380ed4a11ab6e4fa1f794d5f406b0a,
+    type: 3}
+  m_PrefabInstance: {fileID: 500143411}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &500143416 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6078543550146772561, guid: 4c380ed4a11ab6e4fa1f794d5f406b0a,
+    type: 3}
+  m_PrefabInstance: {fileID: 500143411}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &545158092
 GameObject:
   m_ObjectHideFlags: 0
@@ -1734,6 +1756,9 @@ MonoBehaviour:
   starRatingManager: {fileID: 1019241927}
   level: 3
   canContinueWin: 0
+  targetFinishObjects:
+  - {fileID: 500143416}
+  - {fileID: 500143415}
 --- !u!61 &1019241926
 BoxCollider2D:
   m_ObjectHideFlags: 0

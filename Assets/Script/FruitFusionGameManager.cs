@@ -42,6 +42,8 @@ public class FruitFusionGameManager : MonoBehaviour
 
     public bool canContinueWin = false;
     private bool isGameFinish = false;
+
+    public List<GameObject> targetFinishObjects; // Liste des objets à activer lorsque la fusion est réussie
     void Start()
     {
         initialTopBoundaryPosition = topBoundary.position;
@@ -112,6 +114,12 @@ public class FruitFusionGameManager : MonoBehaviour
                     if (fusionCounts[fruitTag] == requiredFusions[index])
                     {
                         PlayFusionVFX(index);
+
+                        // Activer le GameObject correspondant dans targetFinishObjects
+                        if (index < targetFinishObjects.Count && targetFinishObjects[index] != null)
+                        {
+                            targetFinishObjects[index].SetActive(true);
+                        }
                     }
 
                     // Vérifier la condition de victoire globale
@@ -273,30 +281,3 @@ public class FruitFusionGameManager : MonoBehaviour
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
