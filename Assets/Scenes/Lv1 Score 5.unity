@@ -1100,8 +1100,8 @@ MonoBehaviour:
   returnDelay: 0.4
   topBoundaryCollider: {fileID: 139604462}
   fusionSpawnManager: {fileID: 1155190369}
-  targetScore: 700
-  timeLimit: 175
+  targetScore: 800
+  timeLimit: 200
   levelManager: {fileID: 6698744375656552751, guid: 02b9728f63822b444bc4a0584248ab65,
     type: 3}
   level: 14
@@ -1740,6 +1740,7 @@ MonoBehaviour:
   starRatingManager: {fileID: 0}
   level: 0
   canContinueWin: 0
+  targetFinishObjects: []
 --- !u!61 &1019241926
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1828,25 +1829,25 @@ PrefabInstance:
         type: 3}
       propertyPath: 'fruits.Array.data[0]'
       value: 
-      objectReference: {fileID: 980705122428091192, guid: dddbc065c43e5544d996273da87e5d78,
+      objectReference: {fileID: 3113588826357979351, guid: d0b454af58c0307488faec75d7e4e1fc,
         type: 3}
     - target: {fileID: 4808614177698181487, guid: 24ac92d414a33b54885884759db0e6ce,
         type: 3}
       propertyPath: 'fruits.Array.data[1]'
       value: 
-      objectReference: {fileID: 1270956019474222887, guid: 6a804fd2eee109b47bafc3242d8e6669,
+      objectReference: {fileID: 3785130455640799467, guid: dc90c080a4537e34e9b208ab7b0676ab,
         type: 3}
     - target: {fileID: 4808614177698181487, guid: 24ac92d414a33b54885884759db0e6ce,
         type: 3}
       propertyPath: 'fruits.Array.data[2]'
       value: 
-      objectReference: {fileID: 4060837610658536229, guid: d373d462a4f17b349b1afc24247d402b,
+      objectReference: {fileID: 8590883110374739305, guid: 40b903b35f4a3114ab6c0f410a973873,
         type: 3}
     - target: {fileID: 4808614177698181487, guid: 24ac92d414a33b54885884759db0e6ce,
         type: 3}
       propertyPath: 'fruits.Array.data[3]'
       value: 
-      objectReference: {fileID: 1248378195861516425, guid: 308776cab70f3fa41ad4710238982eec,
+      objectReference: {fileID: 9044393578440357093, guid: dc289de59d9c0f8458ebbeb312ccb9fd,
         type: 3}
     - target: {fileID: 4808614177698181487, guid: 24ac92d414a33b54885884759db0e6ce,
         type: 3}
@@ -2851,6 +2852,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 397634808262339247, guid: bd210a3396fcf864c8ef5e58c30d0c04,
+        type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2457396941074414041, guid: bd210a3396fcf864c8ef5e58c30d0c04,
         type: 3}

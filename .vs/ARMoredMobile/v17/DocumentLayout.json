@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "D:\\ARMoredMobile\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|d:\\armoredmobile\\assets\\script\\fruitfusiongamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\fruitfusiongamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|d:\\armoredmobile\\assets\\fruitblower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|solutionrelative:assets\\fruitblower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|d:\\armoredmobile\\assets\\fruitmultiplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|solutionrelative:assets\\fruitmultiplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,14 +27,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FruitFusionGameManager.cs",
-              "DocumentMoniker": "D:\\ARMoredMobile\\Assets\\Script\\FruitFusionGameManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\FruitFusionGameManager.cs",
-              "ToolTip": "D:\\ARMoredMobile\\Assets\\Script\\FruitFusionGameManager.cs",
-              "RelativeToolTip": "Assets\\Script\\FruitFusionGameManager.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAIwIQAAAAFAAAAAAAAAA==",
+              "Title": "FruitBlower.cs",
+              "DocumentMoniker": "D:\\ARMoredMobile\\Assets\\FruitBlower.cs",
+              "RelativeDocumentMoniker": "Assets\\FruitBlower.cs",
+              "ToolTip": "D:\\ARMoredMobile\\Assets\\FruitBlower.cs",
+              "RelativeToolTip": "Assets\\FruitBlower.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwDIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T09:19:04.378Z",
+              "WhenOpened": "2025-02-11T10:26:59.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FruitMultiplier.cs",
+              "DocumentMoniker": "D:\\ARMoredMobile\\Assets\\FruitMultiplier.cs",
+              "RelativeDocumentMoniker": "Assets\\FruitMultiplier.cs",
+              "ToolTip": "D:\\ARMoredMobile\\Assets\\FruitMultiplier.cs",
+              "RelativeToolTip": "Assets\\FruitMultiplier.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T10:13:42.739Z",
               "EditorCaption": ""
             }
           ]

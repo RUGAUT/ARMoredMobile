@@ -932,8 +932,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -81, y: -74}
-  m_SizeDelta: {x: 2480.2656, y: 3508}
+  m_AnchoredPosition: {x: -81, y: -41}
+  m_SizeDelta: {x: 1154, y: 1960}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &977240616
 MonoBehaviour:
@@ -955,7 +955,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a8b3078f03bfdb4469d1d719c96e0ce1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3a2082c8a2fd6ac4d8d586b55bfabbc7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2517,12 +2517,12 @@ PrefabInstance:
     - target: {fileID: 8833550235744886392, guid: 5dd706d36eee1ca4b8f5a447410039b4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20.69
+      value: -20.698
       objectReference: {fileID: 0}
     - target: {fileID: 8833550235744886392, guid: 5dd706d36eee1ca4b8f5a447410039b4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.21
+      value: -1.164
       objectReference: {fileID: 0}
     - target: {fileID: 8833550235744886392, guid: 5dd706d36eee1ca4b8f5a447410039b4,
         type: 3}
@@ -3031,12 +3031,12 @@ PrefabInstance:
     - target: {fileID: 4448906044069246423, guid: 343eb8ce0194b9b40a3bff7479a636f5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20.9
+      value: -20.909
       objectReference: {fileID: 0}
     - target: {fileID: 4448906044069246423, guid: 343eb8ce0194b9b40a3bff7479a636f5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.33
+      value: -3.3335
       objectReference: {fileID: 0}
     - target: {fileID: 4448906044069246423, guid: 343eb8ce0194b9b40a3bff7479a636f5,
         type: 3}
@@ -3195,6 +3195,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 465466495342849896, guid: 4c380ed4a11ab6e4fa1f794d5f406b0a,
+        type: 3}
+      propertyPath: m_Text
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 564089398274313118, guid: 4c380ed4a11ab6e4fa1f794d5f406b0a,
         type: 3}

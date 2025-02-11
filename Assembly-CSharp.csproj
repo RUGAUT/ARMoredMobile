@@ -68,12 +68,14 @@
     <Compile Include="Assets\Script\RandomPlatformSpawner.cs" />
     <Compile Include="Assets\PanelController.cs" />
     <Compile Include="Assets\Script\FruitFusionGameManager.cs" />
+    <Compile Include="Assets\FruitBlower.cs" />
     <Compile Include="Assets\Script\DifficultyManager.cs" />
     <Compile Include="Assets\Script\PauseGame.cs" />
     <Compile Include="Assets\Script\ColliderManager.cs" />
     <Compile Include="Assets\Script\SpawnPrefabOnEmpty.cs" />
     <Compile Include="Assets\Script\LoadingScreen.cs" />
     <Compile Include="Assets\Script\FruitLogic.cs" />
+    <Compile Include="Assets\FruitMultiplier.cs" />
     <Compile Include="Assets\Script\FruitPlacer.cs" />
     <Compile Include="Assets\Script\FruitFusionLight.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
