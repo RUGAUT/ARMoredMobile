@@ -83,7 +83,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4bc8eca707b6bb246847c40b6ea254ca, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c0b2f3e0fcd10fe459c1131c9f5bdfdb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -125,7 +125,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: d453b9b590d9d9144bcd19d39474881b, type: 2}
+  m_Material: {fileID: 6200000, guid: fbe9de2c4ba0de24a87f6a150431d992, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0

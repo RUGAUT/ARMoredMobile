@@ -9,7 +9,7 @@ public class LevelButtonsUI : MonoBehaviour
     {
         if (Instance != null && Instance != this)
         {
-            Destroy(gameObject); // Destroy this duplicate instance
+            //Destroy(gameObject); // Destroy this duplicate instance
             return;
         }
         Instance = this;

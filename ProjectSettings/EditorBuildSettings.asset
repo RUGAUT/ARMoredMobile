@@ -71,6 +71,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lv1 Fusion 12.unity
     guid: 63bfdd8e10b44d944b04ccb5b32a5d1f
+  - enabled: 1
+    path: Assets/Scenes/Lv1 Fusion 13.unity
+    guid: b7c8f5dd24e79c24ca48ad0fcab5b88f
+  - enabled: 1
+    path: Assets/Scenes/Lv1 Fusion 14.unity
+    guid: e5ebce8ef754c4b41951c3cd46ff5c07
+  - enabled: 1
+    path: Assets/Scenes/Lv1 Fusion 15.unity
+    guid: cda0a72ec4654844081aa3690c994826
+  - enabled: 1
+    path: Assets/Scenes/Lv1 Fusion 16.unity
+    guid: 2a37169e5c2a5c848a0a61ec57848ac0
+  - enabled: 1
+    path: Assets/Scenes/Lv1 Fusion 17.unity
+    guid: 91a97fd1a632beb49a94631d779efd48
   m_configObjects:
     com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000,
       guid: 23adce668f7c32e41b8ea8ba2e5473be, type: 2}
