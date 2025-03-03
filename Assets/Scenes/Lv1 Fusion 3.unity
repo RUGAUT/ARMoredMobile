@@ -349,7 +349,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.46324432}
+  m_Offset: {x: 0, y: -0.38629827}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -359,7 +359,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 0.07351136}
+  m_Size: {x: 1, y: 0.1414749}
   m_EdgeRadius: 0
 --- !u!212 &139604463
 SpriteRenderer:
@@ -3185,24 +3185,24 @@ PrefabInstance:
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 94473223348039898, guid: 4c380ed4a11ab6e4fa1f794d5f406b0a,
         type: 3}
-      insertIndex: 5
-      addedObject: {fileID: 1301088086}
-    - targetCorrespondingSourceObject: {fileID: 94473223348039898, guid: 4c380ed4a11ab6e4fa1f794d5f406b0a,
-        type: 3}
-      insertIndex: 6
-      addedObject: {fileID: 1984213055}
-    - targetCorrespondingSourceObject: {fileID: 94473223348039898, guid: 4c380ed4a11ab6e4fa1f794d5f406b0a,
-        type: 3}
-      insertIndex: 7
-      addedObject: {fileID: 1027193971}
-    - targetCorrespondingSourceObject: {fileID: 94473223348039898, guid: 4c380ed4a11ab6e4fa1f794d5f406b0a,
-        type: 3}
-      insertIndex: -1
+      insertIndex: 3
       addedObject: {fileID: 736325950}
     - targetCorrespondingSourceObject: {fileID: 94473223348039898, guid: 4c380ed4a11ab6e4fa1f794d5f406b0a,
         type: 3}
-      insertIndex: -1
+      insertIndex: 4
       addedObject: {fileID: 266443332}
+    - targetCorrespondingSourceObject: {fileID: 94473223348039898, guid: 4c380ed4a11ab6e4fa1f794d5f406b0a,
+        type: 3}
+      insertIndex: 7
+      addedObject: {fileID: 1301088086}
+    - targetCorrespondingSourceObject: {fileID: 94473223348039898, guid: 4c380ed4a11ab6e4fa1f794d5f406b0a,
+        type: 3}
+      insertIndex: 8
+      addedObject: {fileID: 1984213055}
+    - targetCorrespondingSourceObject: {fileID: 94473223348039898, guid: 4c380ed4a11ab6e4fa1f794d5f406b0a,
+        type: 3}
+      insertIndex: 9
+      addedObject: {fileID: 1027193971}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c380ed4a11ab6e4fa1f794d5f406b0a, type: 3}
 --- !u!114 &890772906 stripped
