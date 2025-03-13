@@ -22,6 +22,8 @@ public class FruitPlacer : MonoBehaviour
     [Header("Fruit Rarity Settings")]
     [Range(0f, 1f)] public float[] fruitRarity; // Probabilités pour chaque fruit d'apparaître (somme totale doit être 1)
 
+
+
     void Start()
     {
         // Initialiser le prochain fruit
@@ -94,13 +96,40 @@ public class FruitPlacer : MonoBehaviour
         // Limiter la position du fruit à la zone de spawn
         Vector3 clampedPosition = ClampPositionToSpawnZone(mousePosition);
 
-        // Instancier un fruit aléatoire à la position limitée
-        int randomIndex = GetFruitIndexByRarity();
-        Instantiate(fruits[randomIndex], clampedPosition, Quaternion.identity);
+        // Instancier le même fruit que celui appelé dans SpawnNextFruit à la position limitée
+        if (nextFruit != null)
+        {
+            GameObject fruit = Instantiate(nextFruit, clampedPosition, Quaternion.identity);
 
-        // Réinitialiser le cooldown
-        fruitCooldownTimer = fruitCooldown;
+            // Activer tous les composants du fruit
+            Collider2D collider = fruit.GetComponent<Collider2D>();
+            if (collider != null)
+            {
+                collider.enabled = true; // Activer la collision
+            }
+
+            Rigidbody2D rb = fruit.GetComponent<Rigidbody2D>();
+            if (rb != null)
+            {
+                rb.bodyType = RigidbodyType2D.Dynamic; // Rendre le fruit dynamique
+            }
+
+            // Vous pouvez activer d'autres composants si nécessaire, par exemple:
+            AudioSource audioSource = fruit.GetComponent<AudioSource>();
+            if (audioSource != null)
+            {
+                audioSource.enabled = true; // Activer l'audio si nécessaire
+            }
+
+            // Réinitialiser le cooldown
+            fruitCooldownTimer = fruitCooldown;
+
+            // Mettre à jour le prochain fruit
+            SpawnNextFruit();
+        }
     }
+
+
 
     Vector3 ClampPositionToSpawnZone(Vector3 position)
     {
@@ -313,20 +342,3 @@ public class FruitPlacer : MonoBehaviour
         return spawnZoneCollider.bounds.Contains(position);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

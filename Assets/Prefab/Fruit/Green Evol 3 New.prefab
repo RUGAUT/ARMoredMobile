@@ -33,7 +33,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -16.562471, y: -2.66, z: 0}
-  m_LocalScale: {x: 1.2013695, y: 1.2013695, z: 1.2013695}
+  m_LocalScale: {x: 1.2863064, y: 1.2863064, z: 1.2863064}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -169,11 +169,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95f293789f959234b982a47ddd67a693, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextFruitPrefab: {fileID: 7663892521904520905, guid: 92cb2b66c2cd11c489d5a05ee968d3b5, type: 3}
+  nextFruitPrefab: {fileID: 7663892521904520905, guid: 92cb2b66c2cd11c489d5a05ee968d3b5,
+    type: 3}
   points: 15
   fusionVFXPrefab: {fileID: 0}
   fusionAudioSource: {fileID: 4761114468260723647}
-  pointsDisplayPrefab: {fileID: 8121907567868463392, guid: 4316930e3559feb4e8940864796dddb6, type: 3}
+  pointsDisplayPrefab: {fileID: 8121907567868463392, guid: 4316930e3559feb4e8940864796dddb6,
+    type: 3}
   pointsDisplayHeight: 1
 --- !u!82 &4761114468260723647
 AudioSource:

@@ -38,15 +38,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 460020, guid: e300dff7dc1b9594492c09f5bfd331ea, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.8002882
+      value: 1.3403002
       objectReference: {fileID: 0}
     - target: {fileID: 460020, guid: e300dff7dc1b9594492c09f5bfd331ea, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.8002882
+      value: 1.3403002
       objectReference: {fileID: 0}
     - target: {fileID: 460020, guid: e300dff7dc1b9594492c09f5bfd331ea, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.8002882
+      value: 1.3403002
       objectReference: {fileID: 0}
     - target: {fileID: 460020, guid: e300dff7dc1b9594492c09f5bfd331ea, type: 3}
       propertyPath: m_LocalPosition.x
@@ -54,7 +54,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 460020, guid: e300dff7dc1b9594492c09f5bfd331ea, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.1065
+      value: -1.1157
       objectReference: {fileID: 0}
     - target: {fileID: 460020, guid: e300dff7dc1b9594492c09f5bfd331ea, type: 3}
       propertyPath: m_LocalPosition.z
@@ -87,6 +87,26 @@ PrefabInstance:
     - target: {fileID: 460020, guid: e300dff7dc1b9594492c09f5bfd331ea, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9580428, guid: e300dff7dc1b9594492c09f5bfd331ea, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 21260016, guid: e300dff7dc1b9594492c09f5bfd331ea, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 21260018, guid: e300dff7dc1b9594492c09f5bfd331ea, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 21260020, guid: e300dff7dc1b9594492c09f5bfd331ea, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 21260022, guid: e300dff7dc1b9594492c09f5bfd331ea, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -133,7 +153,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: d453b9b590d9d9144bcd19d39474881b, type: 2}
+  m_Material: {fileID: 6200000, guid: fbe9de2c4ba0de24a87f6a150431d992, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0

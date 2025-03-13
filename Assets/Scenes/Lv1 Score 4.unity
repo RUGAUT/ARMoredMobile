@@ -3223,6 +3223,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 397634808262339247, guid: bd210a3396fcf864c8ef5e58c30d0c04,
         type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 397634808262339247, guid: bd210a3396fcf864c8ef5e58c30d0c04,
+        type: 3}
       propertyPath: m_FontData.m_Alignment
       value: 2
       objectReference: {fileID: 0}
@@ -3244,7 +3249,7 @@ PrefabInstance:
     - target: {fileID: 6036985546808588867, guid: bd210a3396fcf864c8ef5e58c30d0c04,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Lv1 Fusion 4
+      value: Lv1 Fusion 5
       objectReference: {fileID: 0}
     - target: {fileID: 9033283360057396412, guid: bd210a3396fcf864c8ef5e58c30d0c04,
         type: 3}

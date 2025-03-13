@@ -38,15 +38,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 453084, guid: 552227f7d7092a848bc3231f2a2a5a54, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.6889724
+      value: 1.4686463
       objectReference: {fileID: 0}
     - target: {fileID: 453084, guid: 552227f7d7092a848bc3231f2a2a5a54, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.6889724
+      value: 1.4686463
       objectReference: {fileID: 0}
     - target: {fileID: 453084, guid: 552227f7d7092a848bc3231f2a2a5a54, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.6889724
+      value: 1.4686463
       objectReference: {fileID: 0}
     - target: {fileID: 453084, guid: 552227f7d7092a848bc3231f2a2a5a54, type: 3}
       propertyPath: m_LocalPosition.x
@@ -54,7 +54,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 453084, guid: 552227f7d7092a848bc3231f2a2a5a54, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.90736
+      value: -0.91177
       objectReference: {fileID: 0}
     - target: {fileID: 453084, guid: 552227f7d7092a848bc3231f2a2a5a54, type: 3}
       propertyPath: m_LocalPosition.z
@@ -86,6 +86,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 453084, guid: 552227f7d7092a848bc3231f2a2a5a54, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9553090, guid: 552227f7d7092a848bc3231f2a2a5a54, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 21253084, guid: 552227f7d7092a848bc3231f2a2a5a54, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 21253086, guid: 552227f7d7092a848bc3231f2a2a5a54, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 21253088, guid: 552227f7d7092a848bc3231f2a2a5a54, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -133,7 +149,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: d453b9b590d9d9144bcd19d39474881b, type: 2}
+  m_Material: {fileID: 6200000, guid: fbe9de2c4ba0de24a87f6a150431d992, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0

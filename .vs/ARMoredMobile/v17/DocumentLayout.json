@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "D:\\ARMoredMobile\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|D:\\ARMoredMobile\\assets\\fruitblower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|solutionrelative:assets\\fruitblower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|d:\\armoredmobile\\assets\\script\\fruitplacer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\fruitplacer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FruitBlower.cs",
-              "DocumentMoniker": "D:\\ARMoredMobile\\Assets\\FruitBlower.cs",
-              "RelativeDocumentMoniker": "Assets\\FruitBlower.cs",
-              "ToolTip": "D:\\ARMoredMobile\\Assets\\FruitBlower.cs",
-              "RelativeToolTip": "Assets\\FruitBlower.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAABAAAAAAAAAA==",
+              "Title": "FruitPlacer.cs",
+              "DocumentMoniker": "D:\\ARMoredMobile\\Assets\\Script\\FruitPlacer.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\FruitPlacer.cs",
+              "ToolTip": "D:\\ARMoredMobile\\Assets\\Script\\FruitPlacer.cs",
+              "RelativeToolTip": "Assets\\Script\\FruitPlacer.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAmwIIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T10:26:59.624Z",
+              "WhenOpened": "2025-03-03T15:50:25.978Z",
               "EditorCaption": ""
             }
           ]
