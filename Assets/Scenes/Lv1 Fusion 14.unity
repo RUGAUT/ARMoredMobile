@@ -4377,6 +4377,95 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1439691289}
   m_CullTransparentMesh: 1
+--- !u!1001 &1505195448
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 70231710467463498, guid: 128424d9a65a11344bd9961aa7f5852a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7330164384993398851, guid: 128424d9a65a11344bd9961aa7f5852a,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.71299297
+      objectReference: {fileID: 0}
+    - target: {fileID: 7330164384993398851, guid: 128424d9a65a11344bd9961aa7f5852a,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.71299297
+      objectReference: {fileID: 0}
+    - target: {fileID: 7330164384993398851, guid: 128424d9a65a11344bd9961aa7f5852a,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.71299297
+      objectReference: {fileID: 0}
+    - target: {fileID: 7330164384993398851, guid: 128424d9a65a11344bd9961aa7f5852a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.09129048
+      objectReference: {fileID: 0}
+    - target: {fileID: 7330164384993398851, guid: 128424d9a65a11344bd9961aa7f5852a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.5528727
+      objectReference: {fileID: 0}
+    - target: {fileID: 7330164384993398851, guid: 128424d9a65a11344bd9961aa7f5852a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7330164384993398851, guid: 128424d9a65a11344bd9961aa7f5852a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7330164384993398851, guid: 128424d9a65a11344bd9961aa7f5852a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7330164384993398851, guid: 128424d9a65a11344bd9961aa7f5852a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7330164384993398851, guid: 128424d9a65a11344bd9961aa7f5852a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7330164384993398851, guid: 128424d9a65a11344bd9961aa7f5852a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7330164384993398851, guid: 128424d9a65a11344bd9961aa7f5852a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7330164384993398851, guid: 128424d9a65a11344bd9961aa7f5852a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7925579928645211742, guid: 128424d9a65a11344bd9961aa7f5852a,
+        type: 3}
+      propertyPath: m_Name
+      value: wooden-gold-buttons-ui-game_30
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 70231710467463498, guid: 128424d9a65a11344bd9961aa7f5852a, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 128424d9a65a11344bd9961aa7f5852a, type: 3}
 --- !u!1001 &1525723604
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6388,3 +6477,4 @@ SceneRoots:
   - {fileID: 344691058}
   - {fileID: 223053593}
   - {fileID: 1430445372}
+  - {fileID: 1505195448}
