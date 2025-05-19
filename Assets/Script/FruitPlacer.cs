@@ -60,14 +60,20 @@ public class FruitPlacer : MonoBehaviour
             Vector3 mousePosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
             mousePosition.z = 0;
 
-            // Vérifier si le clic est sur un Collider2D donné
+            // Vérifier si le clic est dans la zone interdite
+            if (IsPositionInForbiddenZone(mousePosition))
+            {
+                Debug.Log("Clic dans la zone interdite, impossible de placer un fruit !");
+                return;
+            }
+
             Collider2D clickedCollider = Physics2D.OverlapPoint(mousePosition);
 
             if (clickedCollider != null)
             {
                 if (clickedCollider != forbiddenZoneCollider && clickedCollider != spawnZoneCollider)
                 {
-                    // Si le clic est sur un autre collider, spawn un fruit sous la souris dans la zone de spawn
+                    // Spawn un fruit dans la zone autorisée
                     SpawnFruitAtMousePosition(mousePosition);
                     return;
                 }
@@ -93,41 +99,39 @@ public class FruitPlacer : MonoBehaviour
 
     void SpawnFruitAtMousePosition(Vector3 mousePosition)
     {
+        // Vérifier que la position n'est pas dans la zone interdite
+        if (IsPositionInForbiddenZone(mousePosition))
+        {
+            Debug.Log("Impossible de placer un fruit dans la zone interdite !");
+            return;
+        }
+
         // Limiter la position du fruit à la zone de spawn
         Vector3 clampedPosition = ClampPositionToSpawnZone(mousePosition);
 
-        // Instancier le même fruit que celui appelé dans SpawnNextFruit à la position limitée
+        // Instancier le fruit
         if (nextFruit != null)
         {
             GameObject fruit = Instantiate(nextFruit, clampedPosition, Quaternion.identity);
 
-            // Activer tous les composants du fruit
+            // Activer le collider et le Rigidbody
             Collider2D collider = fruit.GetComponent<Collider2D>();
             if (collider != null)
             {
-                collider.enabled = true; // Activer la collision
+                collider.enabled = true;
             }
 
             Rigidbody2D rb = fruit.GetComponent<Rigidbody2D>();
             if (rb != null)
             {
-                rb.bodyType = RigidbodyType2D.Dynamic; // Rendre le fruit dynamique
+                rb.bodyType = RigidbodyType2D.Dynamic;
             }
 
-            // Vous pouvez activer d'autres composants si nécessaire, par exemple:
-            AudioSource audioSource = fruit.GetComponent<AudioSource>();
-            if (audioSource != null)
-            {
-                audioSource.enabled = true; // Activer l'audio si nécessaire
-            }
-
-            // Réinitialiser le cooldown
             fruitCooldownTimer = fruitCooldown;
-
-            // Mettre à jour le prochain fruit
             SpawnNextFruit();
         }
     }
+
 
 
 

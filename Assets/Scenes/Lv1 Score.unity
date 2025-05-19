@@ -1550,6 +1550,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6812486607501069262, guid: e1b9076fcd43bf541a9fda86d22b1865,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.1899664
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812486607501069262, guid: e1b9076fcd43bf541a9fda86d22b1865,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.31332493
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812486607501069262, guid: e1b9076fcd43bf541a9fda86d22b1865,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0027280748
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812486607501069262, guid: e1b9076fcd43bf541a9fda86d22b1865,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.98516154
+      objectReference: {fileID: 0}
     - target: {fileID: 7069333120856822234, guid: e1b9076fcd43bf541a9fda86d22b1865,
         type: 3}
       propertyPath: m_Size.y
@@ -2515,7 +2535,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 5ee8b9d77e401e149b6ce2312999f851, type: 3}
   m_Resource: {fileID: 8300000, guid: 5ee8b9d77e401e149b6ce2312999f851, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.505
   m_Pitch: 1
   Loop: 1
   Mute: 0

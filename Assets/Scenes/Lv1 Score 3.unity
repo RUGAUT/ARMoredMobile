@@ -945,6 +945,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6812486607501069262, guid: e1b9076fcd43bf541a9fda86d22b1865,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.1899664
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812486607501069262, guid: e1b9076fcd43bf541a9fda86d22b1865,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.31332493
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812486607501069262, guid: e1b9076fcd43bf541a9fda86d22b1865,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0027280748
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812486607501069262, guid: e1b9076fcd43bf541a9fda86d22b1865,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.98516154
+      objectReference: {fileID: 0}
     - target: {fileID: 8261111717723010472, guid: e1b9076fcd43bf541a9fda86d22b1865,
         type: 3}
       propertyPath: m_Size.x
@@ -1130,7 +1150,7 @@ MonoBehaviour:
   returnDelay: 0.4
   topBoundaryCollider: {fileID: 139604462}
   fusionSpawnManager: {fileID: 1155190369}
-  targetScore: 500
+  targetScore: 400
   timeLimit: 200
   levelManager: {fileID: 6698744375656552751, guid: 02b9728f63822b444bc4a0584248ab65,
     type: 3}

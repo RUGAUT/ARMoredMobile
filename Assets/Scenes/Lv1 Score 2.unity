@@ -2116,7 +2116,7 @@ MonoBehaviour:
   returnDelay: 0.4
   topBoundaryCollider: {fileID: 139604462}
   fusionSpawnManager: {fileID: 1155190369}
-  targetScore: 400
+  targetScore: 350
   timeLimit: 230
   levelManager: {fileID: 6698744375656552751, guid: 02b9728f63822b444bc4a0584248ab65,
     type: 3}
@@ -3248,27 +3248,27 @@ PrefabInstance:
     - target: {fileID: 5796515292857698898, guid: ab6e5a90739c694488d10b3b3921af56,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.16393836
+      value: 0.14886914
       objectReference: {fileID: 0}
     - target: {fileID: 5796515292857698898, guid: ab6e5a90739c694488d10b3b3921af56,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.16479412
+      value: 0.14964624
       objectReference: {fileID: 0}
     - target: {fileID: 5796515292857698898, guid: ab6e5a90739c694488d10b3b3921af56,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.18614468
+      value: 0.16903426
       objectReference: {fileID: 0}
     - target: {fileID: 5796515292857698898, guid: ab6e5a90739c694488d10b3b3921af56,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.7
+      value: -0.83
       objectReference: {fileID: 0}
     - target: {fileID: 5796515292857698898, guid: ab6e5a90739c694488d10b3b3921af56,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.26
+      value: 0.24
       objectReference: {fileID: 0}
     - target: {fileID: 5796515292857698898, guid: ab6e5a90739c694488d10b3b3921af56,
         type: 3}
@@ -3315,6 +3315,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: wooden-gold-buttons-ui-game_7
       objectReference: {fileID: 0}
+    - target: {fileID: 8559705780094515889, guid: ab6e5a90739c694488d10b3b3921af56,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1893245014, guid: 3cd4630ef06fb264e9a314fea18c8e38,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3491,6 +3497,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812486607501069262, guid: e1b9076fcd43bf541a9fda86d22b1865,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.1899664
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812486607501069262, guid: e1b9076fcd43bf541a9fda86d22b1865,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.31332493
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812486607501069262, guid: e1b9076fcd43bf541a9fda86d22b1865,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0027280748
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812486607501069262, guid: e1b9076fcd43bf541a9fda86d22b1865,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.98516154
       objectReference: {fileID: 0}
     - target: {fileID: 8261111717723010472, guid: e1b9076fcd43bf541a9fda86d22b1865,
         type: 3}
@@ -5311,27 +5337,27 @@ PrefabInstance:
     - target: {fileID: 5796515292857698898, guid: ab6e5a90739c694488d10b3b3921af56,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.15809146
+      value: 0.13126175
       objectReference: {fileID: 0}
     - target: {fileID: 5796515292857698898, guid: ab6e5a90739c694488d10b3b3921af56,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.1589167
+      value: 0.13194695
       objectReference: {fileID: 0}
     - target: {fileID: 5796515292857698898, guid: ab6e5a90739c694488d10b3b3921af56,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.17950578
+      value: 0.14904186
       objectReference: {fileID: 0}
     - target: {fileID: 5796515292857698898, guid: ab6e5a90739c694488d10b3b3921af56,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1
+      value: 0.8699
       objectReference: {fileID: 0}
     - target: {fileID: 5796515292857698898, guid: ab6e5a90739c694488d10b3b3921af56,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.65
+      value: -1.15
       objectReference: {fileID: 0}
     - target: {fileID: 5796515292857698898, guid: ab6e5a90739c694488d10b3b3921af56,
         type: 3}
@@ -5378,6 +5404,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: wooden-gold-buttons-ui-game_7 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8559705780094515889, guid: ab6e5a90739c694488d10b3b3921af56,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1893245014, guid: 3cd4630ef06fb264e9a314fea18c8e38,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5651,27 +5683,27 @@ PrefabInstance:
     - target: {fileID: 5796515292857698898, guid: ab6e5a90739c694488d10b3b3921af56,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.15516718
+      value: 0.15077905
       objectReference: {fileID: 0}
     - target: {fileID: 5796515292857698898, guid: ab6e5a90739c694488d10b3b3921af56,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.15597714
+      value: 0.1515661
       objectReference: {fileID: 0}
     - target: {fileID: 5796515292857698898, guid: ab6e5a90739c694488d10b3b3921af56,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.1761854
+      value: 0.17120287
       objectReference: {fileID: 0}
     - target: {fileID: 5796515292857698898, guid: ab6e5a90739c694488d10b3b3921af56,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.69
+      value: -0.8199
       objectReference: {fileID: 0}
     - target: {fileID: 5796515292857698898, guid: ab6e5a90739c694488d10b3b3921af56,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.93
+      value: -2.43
       objectReference: {fileID: 0}
     - target: {fileID: 5796515292857698898, guid: ab6e5a90739c694488d10b3b3921af56,
         type: 3}
@@ -5718,6 +5750,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: wooden-gold-buttons-ui-game_7 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8559705780094515889, guid: ab6e5a90739c694488d10b3b3921af56,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1893245014, guid: 3cd4630ef06fb264e9a314fea18c8e38,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

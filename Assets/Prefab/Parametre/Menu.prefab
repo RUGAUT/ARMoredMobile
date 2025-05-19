@@ -28,7 +28,7 @@ RectTransform:
   m_GameObject: {fileID: 2929783932179245214}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.9702206, y: 2.9702206, z: 2.9702206}
+  m_LocalScale: {x: 3.4323864, y: 3.4323864, z: 3.4323864}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 466805149952604774}
@@ -121,7 +121,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6698744375656552751, guid: 02b9728f63822b444bc4a0584248ab65, type: 3}
+      - m_Target: {fileID: 6698744375656552751, guid: 02b9728f63822b444bc4a0584248ab65,
+          type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
         m_MethodName: LoadScene
         m_Mode: 5
