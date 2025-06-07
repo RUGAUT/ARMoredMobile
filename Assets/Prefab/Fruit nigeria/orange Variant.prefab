@@ -106,14 +106,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95f293789f959234b982a47ddd67a693, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextFruitPrefab: {fileID: 7646922195945048543, guid: 9d9a18b9a2dbee642bd05d59487f4719,
+  nextFruitPrefab: {fileID: 7465884392459421617, guid: e9cae972139667a47b8d4a4d49d916d7,
     type: 3}
   points: 5
   fusionVFXPrefab: {fileID: 8796090852137639844, guid: 8021b2e6c524d254e8d52422670d2139,
     type: 3}
   fusionAudioSource: {fileID: 2591493435578387782}
-  pointsDisplayPrefab: {fileID: 2248691167606562045, guid: 83b7f638b769cbe48a792aea934420f2,
-    type: 3}
+  pointsDisplayPrefab: {fileID: 0}
   pointsDisplayHeight: 1
 --- !u!70 &7293157763472798812
 CapsuleCollider2D:

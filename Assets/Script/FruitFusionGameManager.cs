@@ -58,7 +58,7 @@ public class FruitFusionGameManager : MonoBehaviour
     {
         if (isGameOver || isGameFinish) return;
         timer -= Time.deltaTime;
-        timerText.text = "Temps : " + Mathf.Ceil(timer).ToString() + "s";
+        timerText.text = ": " + Mathf.Ceil(timer).ToString() + "s";
 
         if (timer <= 0)
         {

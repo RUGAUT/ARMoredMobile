@@ -33,7 +33,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -12.000199, y: 1.31828, z: 0}
-  m_LocalScale: {x: 0.21803746, y: 0.21479821, z: 0.21886921}
+  m_LocalScale: {x: 0.18016668, y: 0.17749006, z: 0.18085398}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95f293789f959234b982a47ddd67a693, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextFruitPrefab: {fileID: 9044393578440357093, guid: fca85beff2400ae4b832d97a3b4667ae,
+  nextFruitPrefab: {fileID: 5202713041734021774, guid: 12f8d98f2f6658044a0849b232486cf3,
     type: 3}
   points: 20
   fusionVFXPrefab: {fileID: 8796090852137639844, guid: 8021b2e6c524d254e8d52422670d2139,

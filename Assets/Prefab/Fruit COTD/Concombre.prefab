@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 4686644454132154112}
   m_Layer: 3
   m_Name: Concombre
-  m_TagString: courge
+  m_TagString: Concombre
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95f293789f959234b982a47ddd67a693, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextFruitPrefab: {fileID: 9044393578440357093, guid: cfad5ce81b28eb744848b8f51ea92dc2,
+  nextFruitPrefab: {fileID: 6055185938667942740, guid: 3f6afcc53d4cf9046ad1d02a231db3c1,
     type: 3}
   points: 20
   fusionVFXPrefab: {fileID: 8796090852137639844, guid: 8021b2e6c524d254e8d52422670d2139,

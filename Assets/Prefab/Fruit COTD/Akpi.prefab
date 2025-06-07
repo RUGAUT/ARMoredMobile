@@ -33,13 +33,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8590883110374739305}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.00034904052, w: 0.99999994}
+  m_LocalRotation: {x: -0, y: -0, z: 0.38188973, w: 0.9242079}
   m_LocalPosition: {x: -15.036121, y: -3.655466, z: 0}
-  m_LocalScale: {x: 0.032826293, y: 0.032826293, z: 0.032826293}
+  m_LocalScale: {x: 0.020838104, y: 0.020838104, z: 0.020838104}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.04}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 44.902}
 --- !u!212 &8533378842445552959
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -150,8 +150,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -2.5849788, y: -3.489742}
-  m_Size: {x: 12.910924, y: 12.910924}
+  m_Offset: {x: 0.72874606, y: -0.5746594}
+  m_Size: {x: 14.102122, y: 13.017355}
   m_Direction: 1
 --- !u!50 &5368865496011164850
 Rigidbody2D:
@@ -524,7 +524,7 @@ CapsuleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8590883110374739305}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -551,6 +551,6 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 2.6274335, y: 1.5791299}
-  m_Size: {x: 14.403826, y: 13.967545}
+  m_Offset: {x: 1.7733767, y: 0.61589384}
+  m_Size: {x: 12.695717, y: 12.041122}
   m_Direction: 1

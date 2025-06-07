@@ -34,7 +34,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -17.652184, y: -3.27, z: 0}
-  m_LocalScale: {x: 0.027165644, y: 0.027165644, z: 0.027165644}
+  m_LocalScale: {x: 0.024524327, y: 0.024524327, z: 0.024524327}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -149,8 +149,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.20599063, y: -0.33969587}
-  m_Size: {x: 15.676091, y: 17.71857}
+  m_Offset: {x: -0.12513794, y: -0.8248634}
+  m_Size: {x: 15.029308, y: 16.748232}
   m_Direction: 0
 --- !u!50 &3618921602432908345
 Rigidbody2D:

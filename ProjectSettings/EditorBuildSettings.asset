@@ -6,86 +6,83 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
+    path: Assets/New Scene/MainMenu.unity
     guid: fa4265eee9ea505488466521f92daaed
   - enabled: 1
-    path: Assets/Scenes/Mode Arcade.unity
-    guid: b004a940b055e85488f39f9975b9d92d
+    path: Assets/New Scene/Lv 1.unity
+    guid: 98db98af33234234b990554abe915878
   - enabled: 1
-    path: Assets/Scenes/Lv1 Fusion.unity
-    guid: c1d96d0b3f3f50f4f9ffcd96bf32d816
+    path: Assets/New Scene/Lv 2.unity
+    guid: 4feb0b245d70ba4408cc42d762e20622
   - enabled: 1
-    path: Assets/Scenes/Lv1 Score.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    path: Assets/New Scene/Lv 3.unity
+    guid: 228ffe06ad7f52c4daa31b80a65d6947
   - enabled: 1
-    path: Assets/Scenes/Lv1 Fusion 1.unity
-    guid: 42a174fc1fa994045bc3e142d7209297
+    path: Assets/New Scene/Lv 4.unity
+    guid: 93bcb7d59726eb947afce3c1893c6d39
   - enabled: 1
-    path: Assets/Scenes/Lv1 Fusion 2.unity
-    guid: dcb8b36ece1ef1043886b863a6aaf692
+    path: Assets/New Scene/Lv 5.unity
+    guid: bf0df0a43d9795c44a0885f5b87790a8
   - enabled: 1
-    path: Assets/Scenes/Lv1 Score 1.unity
-    guid: 7879969541c4fe745a98018600eae07e
+    path: Assets/New Scene/Lv 6.unity
+    guid: e50d0462d701efa438a5a8285bcc74a6
   - enabled: 1
-    path: Assets/Scenes/Lv1 Fusion 3.unity
-    guid: 0e2defb1659c1e44f95f9eb7b10b5c67
+    path: Assets/New Scene/Lv 7.unity
+    guid: 60534810b02ab3d4a8ef45a90ed68a5b
   - enabled: 1
-    path: Assets/Scenes/Lv1 Score 2.unity
-    guid: 77ac060b7beaa234588f4413fe64d670
+    path: Assets/New Scene/Lv 8.unity
+    guid: dd294615c353f29419890feda4ed267e
   - enabled: 1
-    path: Assets/Scenes/Lv1 Score 3.unity
-    guid: 9b4e222221f8d324185d0f186a254967
+    path: Assets/New Scene/Lv 9.unity
+    guid: cd0229f7b95ef5f47af588749bf3bd23
   - enabled: 1
-    path: Assets/Scenes/Lv1 Fusion 4.unity
-    guid: a3cec6f829d802c4da7b1e08db49cee0
+    path: Assets/New Scene/Lv 10.unity
+    guid: db68c92122d48f24faf0a0a6e57a536d
   - enabled: 1
-    path: Assets/Scenes/Lv1 Score 4.unity
-    guid: 3ce34e695e466224798f1b870aa4d987
+    path: Assets/New Scene/Lv 11.unity
+    guid: 7ffa0b7fc5956f84388ab167d0d06f7e
   - enabled: 1
-    path: Assets/Scenes/Lv1 Fusion 5.unity
-    guid: 4ee728ac66a2ed64c8ed6a8eb0675beb
+    path: Assets/New Scene/Lv 12.unity
+    guid: 13f50755f02773d428fca97b75cd3152
   - enabled: 1
-    path: Assets/Scenes/Lv1 Fusion 6.unity
-    guid: 8d9957bebb9beb848a6f2ecb0a121a65
+    path: Assets/New Scene/Lv 13.unity
+    guid: 1544447bd95571049b0e39b1813317c2
   - enabled: 1
-    path: Assets/Scenes/Lv1 Fusion 7.unity
-    guid: 2eb8ac2df238f274496ec8242d7bb682
+    path: Assets/New Scene/Lv 14.unity
+    guid: 16c50347f787fa342814d806a3e7bdb1
   - enabled: 1
-    path: Assets/Scenes/Lv1 Score 5.unity
-    guid: 4572dee5dd56d9b499f146129e7f2623
+    path: Assets/New Scene/Lv 15.unity
+    guid: bd74dc019c93bb846888c21cd12fec5c
   - enabled: 1
-    path: Assets/Scenes/Lv1 Score 6.unity
-    guid: 4645ab6bf6146b945be7a7b1fe266995
+    path: Assets/New Scene/Lv 16.unity
+    guid: d020d0be5c7e3da4b9f1a01247eb7814
   - enabled: 1
-    path: Assets/Scenes/Lv1 Fusion 8.unity
-    guid: 309d7aee377a607468cb433d3dccfddf
+    path: Assets/New Scene/Lv 17.unity
+    guid: 597f0f3120b53864e81154628d60a8d9
   - enabled: 1
-    path: Assets/Scenes/Lv1 Fusion 9.unity
-    guid: f65e71372fb3c024c966b7fa23bc301c
+    path: Assets/New Scene/Lv 18.unity
+    guid: 748127c35550a03458ce93c8c471c0e8
   - enabled: 1
-    path: Assets/Scenes/Lv1 Fusion 10.unity
-    guid: 143c17095d6d4c946ab1e839aece4686
+    path: Assets/New Scene/Lv 19.unity
+    guid: deb0df032fd81604888e66fe9f0c102e
   - enabled: 1
-    path: Assets/Scenes/Lv1 Fusion 11.unity
-    guid: d8970fd6d748bd942b43c8dad642d889
+    path: Assets/New Scene/Lv 20.unity
+    guid: f8d4e5b1c9029a84fbace65467c8837f
   - enabled: 1
-    path: Assets/Scenes/Lv1 Fusion 12.unity
-    guid: 63bfdd8e10b44d944b04ccb5b32a5d1f
+    path: Assets/New Scene/Lv 21.unity
+    guid: de4763137c6899f4c9aec33021065842
   - enabled: 1
-    path: Assets/Scenes/Lv1 Fusion 13.unity
-    guid: b7c8f5dd24e79c24ca48ad0fcab5b88f
+    path: Assets/New Scene/Lv 22.unity
+    guid: 0022a907d18beea4eb331360b6fc994d
   - enabled: 1
-    path: Assets/Scenes/Lv1 Fusion 14.unity
-    guid: e5ebce8ef754c4b41951c3cd46ff5c07
+    path: Assets/New Scene/Lv 23.unity
+    guid: 8515a3be22bce1744be4006cccef89fc
   - enabled: 1
-    path: Assets/Scenes/Lv1 Fusion 15.unity
-    guid: cda0a72ec4654844081aa3690c994826
+    path: Assets/New Scene/Lv 24.unity
+    guid: 5757f77caa74b474ab5872843b78f314
   - enabled: 1
-    path: Assets/Scenes/Lv1 Fusion 16.unity
-    guid: 2a37169e5c2a5c848a0a61ec57848ac0
-  - enabled: 1
-    path: Assets/Scenes/Lv1 Fusion 17.unity
-    guid: 91a97fd1a632beb49a94631d779efd48
+    path: Assets/New Scene/Lv 25.unity
+    guid: 12d1750ffd7cd944ea9cb4c057655320
   m_configObjects:
     com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000,
       guid: 23adce668f7c32e41b8ea8ba2e5473be, type: 2}

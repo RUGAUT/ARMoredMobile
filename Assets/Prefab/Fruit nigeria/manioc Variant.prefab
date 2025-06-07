@@ -34,13 +34,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8590883110374739305}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.00034904052, w: 0.99999994}
+  m_LocalRotation: {x: -0, y: -0, z: 0.46418434, w: 0.8857387}
   m_LocalPosition: {x: -15.036121, y: -3.655466, z: 0}
-  m_LocalScale: {x: 0.18618804, y: 0.18618804, z: 0.18618804}
+  m_LocalScale: {x: 0.13384488, y: 0.13384488, z: 0.13384488}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.04}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 55.315}
 --- !u!212 &8533378842445552959
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -114,8 +114,7 @@ MonoBehaviour:
   fusionVFXPrefab: {fileID: 8796090852137639844, guid: 8021b2e6c524d254e8d52422670d2139,
     type: 3}
   fusionAudioSource: {fileID: 5517273817669143015}
-  pointsDisplayPrefab: {fileID: 2248691167606562045, guid: 83b7f638b769cbe48a792aea934420f2,
-    type: 3}
+  pointsDisplayPrefab: {fileID: 0}
   pointsDisplayHeight: 1
 --- !u!70 &309034931145435636
 CapsuleCollider2D:
@@ -151,8 +150,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -1.8000599, y: -1.2251176}
-  m_Size: {x: 1.6533574, y: 1.6533574}
+  m_Offset: {x: -1.5137618, y: -1.1645491}
+  m_Size: {x: 1.4212909, y: 1.188356}
   m_Direction: 1
 --- !u!50 &5368865496011164850
 Rigidbody2D:
@@ -552,8 +551,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.5568105, y: -0.3507277}
-  m_Size: {x: 1.846588, y: 1.7640842}
+  m_Offset: {x: -0.4307051, y: -0.26686457}
+  m_Size: {x: 1.5943779, y: 1.3084197}
   m_Direction: 1
 --- !u!70 &9193297133906615224
 CapsuleCollider2D:
@@ -589,6 +588,6 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.5058732, y: 0.43354252}
-  m_Size: {x: 1.4948224, y: 1.1030303}
+  m_Offset: {x: 0.38156116, y: 0.31579036}
+  m_Size: {x: 1.2461979, y: 0.86752564}
   m_Direction: 1
