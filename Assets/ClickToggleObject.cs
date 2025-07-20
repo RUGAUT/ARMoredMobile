@@ -1,36 +1,55 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 public class ClickToggleObject : MonoBehaviour
 {
-    public GameObject objectToToggle; // L'objet à afficher/masquer
-    public int clicksToShow = 5; // Nombre de clics pour afficher l'objet
-    public int clicksToHide = 3; // Nombre de clics pour le cacher
+    public GameObject objectToToggle;        // L'objet Ã  afficher/masquer
+    public int clicksToShow = 5;             // Nombre de clics pour afficher l'objet
+    public float disappearAfterSeconds = 3f; // Temps avant disparition auto
 
     private int clickCount = 0;
     private bool isObjectVisible = false;
+    private float timer = 0f;
+
+    private bool hasBeenHidden = false; // âœ… EmpÃªche la rÃ©apparition
 
     void Start()
     {
         if (objectToToggle != null)
         {
-            objectToToggle.SetActive(false); // Cache l'objet au départ
+            objectToToggle.SetActive(false);
         }
     }
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0)) // Détecte un tap sur l'écran (clic gauche pour test PC)
-        {
-            clickCount++;
+        if (hasBeenHidden) return; // âœ… Ne rien faire si dÃ©jÃ  disparu une fois
 
-            if (!isObjectVisible && clickCount >= clicksToShow)
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (!isObjectVisible)
             {
-                ShowObject();
+                clickCount++;
+
+                if (clickCount >= clicksToShow)
+                {
+                    ShowObject();
+                }
             }
-            else if (isObjectVisible && clickCount >= clicksToShow + clicksToHide)
+            else
+            {
+                if (IsPointerOverObject(objectToToggle))
+                {
+                    HideObject();
+                }
+            }
+        }
+
+        if (isObjectVisible)
+        {
+            timer += Time.deltaTime;
+            if (timer >= disappearAfterSeconds)
             {
                 HideObject();
-                clickCount = 0; // Réinitialise le compteur après avoir caché l'objet
             }
         }
     }
@@ -41,6 +60,7 @@ public class ClickToggleObject : MonoBehaviour
         {
             objectToToggle.SetActive(true);
             isObjectVisible = true;
+            timer = 0f;
         }
     }
 
@@ -50,7 +70,16 @@ public class ClickToggleObject : MonoBehaviour
         {
             objectToToggle.SetActive(false);
             isObjectVisible = false;
+            clickCount = 0;
+            timer = 0f;
+            hasBeenHidden = true; // âœ… Lâ€™objet ne peut plus Ãªtre affichÃ©
         }
     }
-}
 
+    bool IsPointerOverObject(GameObject obj)
+    {
+        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Collider2D collider = obj.GetComponent<Collider2D>();
+        return collider != null && collider.OverlapPoint(mousePosition);
+    }
+}

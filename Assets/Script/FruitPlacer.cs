@@ -55,6 +55,9 @@ public class FruitPlacer : MonoBehaviour
 
     void HandleInput()
     {
+        if (Time.timeScale == 0)
+            return;
+
         if (Input.GetMouseButtonDown(0) && fruitCooldownTimer <= 0) // Vérifier si le cooldown est terminé
         {
             Vector3 mousePosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);

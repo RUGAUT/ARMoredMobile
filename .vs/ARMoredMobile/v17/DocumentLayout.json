@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "D:\\ARMoredMobile\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|d:\\armoredmobile\\assets\\script\\menuingamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\menuingamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|d:\\armoredmobile\\assets\\closepanelbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|solutionrelative:assets\\closepanelbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|d:\\armoredmobile\\assets\\script\\fruitfusiongamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\fruitfusiongamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|d:\\armoredmobile\\assets\\pausefusion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|solutionrelative:assets\\pausefusion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|D:\\ARMoredMobile\\assets\\mutemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|solutionrelative:assets\\mutemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|D:\\ARMoredMobile\\assets\\clicktoggleobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|solutionrelative:assets\\clicktoggleobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|D:\\ARMoredMobile\\assets\\script\\fruitplacer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\fruitplacer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|D:\\ARMoredMobile\\assets\\languagemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|solutionrelative:assets\\languagemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|D:\\ARMoredMobile\\assets\\localizedtext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|solutionrelative:assets\\localizedtext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|D:\\ARMoredMobile\\assets\\languagedropdown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4571D31-29D5-4C80-29FC-4500D35422D7}|Assembly-CSharp.csproj|solutionrelative:assets\\languagedropdown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,57 +34,81 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FruitFusionGameManager.cs",
-              "DocumentMoniker": "D:\\ARMoredMobile\\Assets\\Script\\FruitFusionGameManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\FruitFusionGameManager.cs",
-              "ToolTip": "D:\\ARMoredMobile\\Assets\\Script\\FruitFusionGameManager.cs",
-              "RelativeToolTip": "Assets\\Script\\FruitFusionGameManager.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAAwDwAAAAaAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "ClosePanelButton.cs",
+              "DocumentMoniker": "D:\\ARMoredMobile\\Assets\\ClosePanelButton.cs",
+              "RelativeDocumentMoniker": "Assets\\ClosePanelButton.cs",
+              "ToolTip": "D:\\ARMoredMobile\\Assets\\ClosePanelButton.cs",
+              "RelativeToolTip": "Assets\\ClosePanelButton.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T09:44:42.733Z",
+              "WhenOpened": "2025-06-16T16:01:45.382Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MenuInGameManager.cs",
-              "DocumentMoniker": "D:\\ARMoredMobile\\Assets\\Script\\MenuInGameManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\MenuInGameManager.cs",
-              "ToolTip": "D:\\ARMoredMobile\\Assets\\Script\\MenuInGameManager.cs",
-              "RelativeToolTip": "Assets\\Script\\MenuInGameManager.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAgwDAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "PauseFusion.cs",
+              "DocumentMoniker": "D:\\ARMoredMobile\\Assets\\PauseFusion.cs",
+              "RelativeDocumentMoniker": "Assets\\PauseFusion.cs",
+              "ToolTip": "D:\\ARMoredMobile\\Assets\\PauseFusion.cs*",
+              "RelativeToolTip": "Assets\\PauseFusion.cs*",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwDUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T09:38:29.817Z",
+              "WhenOpened": "2025-06-16T15:57:46.223Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "MuteManager.cs",
-              "DocumentMoniker": "D:\\ARMoredMobile\\Assets\\MuteManager.cs",
-              "RelativeDocumentMoniker": "Assets\\MuteManager.cs",
-              "ToolTip": "D:\\ARMoredMobile\\Assets\\MuteManager.cs",
-              "RelativeToolTip": "Assets\\MuteManager.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAUwCkAAAAAAAAAAAAAAA==",
+              "Title": "ClickToggleObject.cs",
+              "DocumentMoniker": "D:\\ARMoredMobile\\Assets\\ClickToggleObject.cs",
+              "RelativeDocumentMoniker": "Assets\\ClickToggleObject.cs",
+              "ToolTip": "D:\\ARMoredMobile\\Assets\\ClickToggleObject.cs",
+              "RelativeToolTip": "Assets\\ClickToggleObject.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAwwD4AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T16:47:32.277Z"
+              "WhenOpened": "2025-06-13T19:29:09.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LanguageDropdown.cs",
+              "DocumentMoniker": "D:\\ARMoredMobile\\Assets\\LanguageDropdown.cs",
+              "RelativeDocumentMoniker": "Assets\\LanguageDropdown.cs",
+              "ToolTip": "D:\\ARMoredMobile\\Assets\\LanguageDropdown.cs",
+              "RelativeToolTip": "Assets\\LanguageDropdown.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T13:00:06.386Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LocalizedText.cs",
+              "DocumentMoniker": "D:\\ARMoredMobile\\Assets\\LocalizedText.cs",
+              "RelativeDocumentMoniker": "Assets\\LocalizedText.cs",
+              "ToolTip": "D:\\ARMoredMobile\\Assets\\LocalizedText.cs",
+              "RelativeToolTip": "Assets\\LocalizedText.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T12:49:04.22Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "FruitPlacer.cs",
-              "DocumentMoniker": "D:\\ARMoredMobile\\Assets\\Script\\FruitPlacer.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\FruitPlacer.cs",
-              "ToolTip": "D:\\ARMoredMobile\\Assets\\Script\\FruitPlacer.cs",
-              "RelativeToolTip": "Assets\\Script\\FruitPlacer.cs",
-              "ViewState": "AgIAADABAAAAAAAAAAAUwFsBAAABAAAAAAAAAA==",
+              "Title": "LanguageManager.cs",
+              "DocumentMoniker": "D:\\ARMoredMobile\\Assets\\LanguageManager.cs",
+              "RelativeDocumentMoniker": "Assets\\LanguageManager.cs",
+              "ToolTip": "D:\\ARMoredMobile\\Assets\\LanguageManager.cs",
+              "RelativeToolTip": "Assets\\LanguageManager.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAwwHIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T15:50:25.978Z"
+              "WhenOpened": "2025-06-12T12:47:20.778Z"
             }
           ]
         }

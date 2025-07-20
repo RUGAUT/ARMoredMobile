@@ -57,8 +57,7 @@ MonoBehaviour:
   fusionVFXPrefab: {fileID: 8796090852137639844, guid: 8021b2e6c524d254e8d52422670d2139,
     type: 3}
   fusionAudioSource: {fileID: 2847750214862605672}
-  pointsDisplayPrefab: {fileID: 2248691167606562045, guid: 83b7f638b769cbe48a792aea934420f2,
-    type: 3}
+  pointsDisplayPrefab: {fileID: 0}
   pointsDisplayHeight: 1
 --- !u!212 &3335855802740267286
 SpriteRenderer:

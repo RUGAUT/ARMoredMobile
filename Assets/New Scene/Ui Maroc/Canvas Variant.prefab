@@ -19,6 +19,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 826802165328533813, guid: 2a3e90aa67beb2e408387bd68d0c3f15,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 2102980114, guid: 50ee27522d2570644917d1fa1b28adef,
+        type: 3}
     - target: {fileID: 1860625513579531643, guid: 2a3e90aa67beb2e408387bd68d0c3f15,
         type: 3}
       propertyPath: m_IsActive
@@ -75,6 +81,11 @@ PrefabInstance:
       propertyPath: m_UpdateMode
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2664554925747850996, guid: 2a3e90aa67beb2e408387bd68d0c3f15,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2859086806504852524, guid: 2a3e90aa67beb2e408387bd68d0c3f15,
         type: 3}
       propertyPath: m_Sprite
@@ -92,6 +103,12 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 43f8b267d53a27d46ac174d6bb091388,
+        type: 3}
+    - target: {fileID: 4402561724171356612, guid: 2a3e90aa67beb2e408387bd68d0c3f15,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1ac643dd39765854e8d9970dedfc5511,
         type: 3}
     - target: {fileID: 4650842081634831119, guid: 2a3e90aa67beb2e408387bd68d0c3f15,
         type: 3}
@@ -204,6 +221,21 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 111
       objectReference: {fileID: 0}
+    - target: {fileID: 5163605889892551603, guid: 2a3e90aa67beb2e408387bd68d0c3f15,
+        type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5463112023235916786, guid: 2a3e90aa67beb2e408387bd68d0c3f15,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6021192421474419211, guid: 2a3e90aa67beb2e408387bd68d0c3f15,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7324678227391598089, guid: 2a3e90aa67beb2e408387bd68d0c3f15,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -273,6 +305,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7774649581264927065, guid: 2a3e90aa67beb2e408387bd68d0c3f15,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2480.2656
+      objectReference: {fileID: 0}
+    - target: {fileID: 7774649581264927065, guid: 2a3e90aa67beb2e408387bd68d0c3f15,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 3508
       objectReference: {fileID: 0}
     - target: {fileID: 8391632042334957257, guid: 2a3e90aa67beb2e408387bd68d0c3f15,
         type: 3}

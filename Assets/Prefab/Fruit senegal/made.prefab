@@ -33,8 +33,8 @@ Transform:
   m_GameObject: {fileID: 1270956019474222887}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.17, y: -5.47, z: 0}
-  m_LocalScale: {x: 0.06010791, y: 0.06010791, z: 0.06010791}
+  m_LocalPosition: {x: -10.167, y: -5.47, z: 0}
+  m_LocalScale: {x: 0.07703041, y: 0.07703041, z: 0.07703041}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -106,7 +106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95f293789f959234b982a47ddd67a693, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextFruitPrefab: {fileID: 2781206750220990063, guid: 343eb8ce0194b9b40a3bff7479a636f5,
+  nextFruitPrefab: {fileID: 1649726694590701896, guid: ce847b88e83114b43b6740fbf1a0b618,
     type: 3}
   points: 5
   fusionVFXPrefab: {fileID: 8796090852137639844, guid: 8021b2e6c524d254e8d52422670d2139,

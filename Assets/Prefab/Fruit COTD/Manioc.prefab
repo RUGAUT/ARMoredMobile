@@ -111,8 +111,7 @@ MonoBehaviour:
   fusionVFXPrefab: {fileID: 8796090852137639844, guid: 8021b2e6c524d254e8d52422670d2139,
     type: 3}
   fusionAudioSource: {fileID: 8597534700293432303}
-  pointsDisplayPrefab: {fileID: 6529840925110410035, guid: 5206309c2a3317c47b51641125516013,
-    type: 3}
+  pointsDisplayPrefab: {fileID: 0}
   pointsDisplayHeight: 1
 --- !u!70 &9066474131103563406
 CapsuleCollider2D:

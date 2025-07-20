@@ -15,7 +15,7 @@ D:/ARMoredMobile
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-54057
+53497
 -job-worker-count
 7
 -background-job-worker-count
@@ -59,12 +59,12 @@ D:/ARMoredMobile
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [17616]  Target information:
+Player connection [15744]  Target information:
 
-Player connection [17616]  * "[IP] 192.168.1.55 [Port] 0 [Flags] 2 [Guid] 2712719545 [EditorId] 2712719545 [Version] 1048832 [Id] WindowsEditor(7,RUBEN) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [15744]  * "[IP] 192.168.1.4 [Port] 0 [Flags] 2 [Guid] 2665878897 [EditorId] 2665878897 [Version] 1048832 [Id] WindowsEditor(7,RUBEN) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [17616] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [17616] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [15744] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [15744] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -76,7 +76,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 8.78 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 7.42 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.44f1 (101c91f3a8fb)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.44f1/Editor/Data/Resources/UnitySubsystems
@@ -87,55 +87,55 @@ Direct3D:
     Renderer: NVIDIA GeForce RTX 4050 Laptop GPU (ID=0x28a1)
     Vendor:   NVIDIA
     VRAM:     5921 MB
-    Driver:   32.0.15.7283
+    Driver:   32.0.15.7652
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.44f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.44f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.44f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56600
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56100
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.44f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.44f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.44f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.44f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.004831 seconds.
-- Loaded All Assemblies, in  0.416 seconds
+Registered in 0.007401 seconds.
+- Loaded All Assemblies, in  0.424 seconds
 Native extension for LinuxStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 655 ms
+Android Extension - Scanning For ADB Devices 332 ms
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.026 seconds
-Domain Reload Profiling: 1440ms
-	BeginReloadAssembly (133ms)
+- Finished resetting the current domain, in  0.780 seconds
+Domain Reload Profiling: 1203ms
+	BeginReloadAssembly (144ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (31ms)
+	RebuildCommonClasses (34ms)
 	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (45ms)
-	LoadAllAssembliesAndSetupDomain (191ms)
-		LoadAssemblies (132ms)
+	initialDomainReloadingComplete (57ms)
+	LoadAllAssembliesAndSetupDomain (173ms)
+		LoadAssemblies (142ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (187ms)
-			TypeCache.Refresh (185ms)
-				TypeCache.ScanAssembly (170ms)
+		AnalyzeDomain (167ms)
+			TypeCache.Refresh (166ms)
+				TypeCache.ScanAssembly (152ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (1026ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (781ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (990ms)
+		SetupLoadedEditorAssemblies (742ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (741ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (55ms)
-			ProcessInitializeOnLoadAttributes (122ms)
-			ProcessInitializeOnLoadMethodAttributes (68ms)
+			InitializePlatformSupportModulesInManaged (425ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (65ms)
+			ProcessInitializeOnLoadAttributes (163ms)
+			ProcessInitializeOnLoadMethodAttributes (84ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -144,8 +144,8 @@ Domain Reload Profiling: 1440ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.892 seconds
-Refreshing native plugins compatible for Editor in 2.41 ms, found 4 plugins.
+- Loaded All Assemblies, in  1.119 seconds
+Refreshing native plugins compatible for Editor in 5.35 ms, found 4 plugins.
 Native extension for LinuxStandalone target not found
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
@@ -158,72 +158,172 @@ Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.802 seconds
-Domain Reload Profiling: 1685ms
-	BeginReloadAssembly (166ms)
+- Finished resetting the current domain, in  1.019 seconds
+Domain Reload Profiling: 2120ms
+	BeginReloadAssembly (176ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
+		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (34ms)
-	RebuildCommonClasses (42ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (38ms)
-	LoadAllAssembliesAndSetupDomain (624ms)
-		LoadAssemblies (446ms)
+		CreateAndSetChildDomain (29ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (37ms)
+	LoadAllAssembliesAndSetupDomain (839ms)
+		LoadAssemblies (624ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (275ms)
-			TypeCache.Refresh (201ms)
-				TypeCache.ScanAssembly (178ms)
-			BuildScriptInfoCaches (62ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (802ms)
+		AnalyzeDomain (323ms)
+			TypeCache.Refresh (238ms)
+				TypeCache.ScanAssembly (217ms)
+			BuildScriptInfoCaches (70ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (1019ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (663ms)
+		SetupLoadedEditorAssemblies (853ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (13ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (145ms)
-			ProcessInitializeOnLoadAttributes (388ms)
-			ProcessInitializeOnLoadMethodAttributes (110ms)
+			InitializePlatformSupportModulesInManaged (18ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (285ms)
+			ProcessInitializeOnLoadAttributes (423ms)
+			ProcessInitializeOnLoadMethodAttributes (118ms)
 			AfterProcessingInitializeOnLoad (4ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (5ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 5.20 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 5.30 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 246 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7173 unused Assets / (7.9 MB). Loaded Objects now: 7861.
-Memory consumption went from 204.5 MB to 196.6 MB.
-Total: 12.437000 ms (FindLiveObjects: 1.223600 ms CreateObjectMapping: 1.190100 ms MarkObjects: 6.004300 ms  DeleteObjects: 4.017300 ms)
+Unloading 260 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7218 unused Assets / (8.8 MB). Loaded Objects now: 7919.
+Memory consumption went from 206.0 MB to 197.2 MB.
+Total: 17.148200 ms (FindLiveObjects: 1.663700 ms CreateObjectMapping: 0.902200 ms MarkObjects: 7.075100 ms  DeleteObjects: 7.505300 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 10644.375735 seconds.
-  path: Assets/Sprite/FruitFace_v1/Textures/Tiles/sprite_arrow_atlas.png
-  artifactKey: Guid(eac7e1cdd756b32418e2d9afd6871172) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprite/FruitFace_v1/Textures/Tiles/sprite_arrow_atlas.png using Guid(eac7e1cdd756b32418e2d9afd6871172) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '415cb7d8a861692b8cd243ca4002f3f9') in 0.3741313 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 27
+  Time since last request: 37986.054321 seconds.
+  path: Assets/Sprite/sprite fruit/jujube.png
+  artifactKey: Guid(93702a4adece1af489101d8d41b4981c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/sprite fruit/jujube.png using Guid(93702a4adece1af489101d8d41b4981c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd8714aec0a75d4bf721d212ea7899cb9') in 0.2020023 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Sprite/FruitFace_v1/Textures/Tiles/sprite_fruit_face_atlas_01.psd
-  artifactKey: Guid(51e2a399831333b478ec978ee598bf0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprite/FruitFace_v1/Textures/Tiles/sprite_fruit_face_atlas_01.psd using Guid(51e2a399831333b478ec978ee598bf0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '96e8e25250c8addc48a51f89c73b1035') in 0.1726555 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+  Time since last request: 0.000045 seconds.
+  path: Assets/Sprite/sprite fruit/10.png
+  artifactKey: Guid(aff855bb0e2914b4f9fe7a65d5ea8b7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/sprite fruit/10.png using Guid(aff855bb0e2914b4f9fe7a65d5ea8b7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fdc1c94faba1769d65fa974d0d58e3e5') in 0.0361914 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Sprite/FruitFace_v1/Textures/Tiles/sprite_eye_atlas_blue_02.psd
-  artifactKey: Guid(feb7791f42a400b4495ac2c50d1aad3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprite/FruitFace_v1/Textures/Tiles/sprite_eye_atlas_blue_02.psd using Guid(feb7791f42a400b4495ac2c50d1aad3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5e439d808053c51811fb17029c3540e2') in 0.0681861 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+  Time since last request: 0.000036 seconds.
+  path: Assets/Sprite/sprite fruit/piment.png
+  artifactKey: Guid(8ad1c3b76f37a8e45a9b6e3d87c9f114) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/sprite fruit/piment.png using Guid(8ad1c3b76f37a8e45a9b6e3d87c9f114) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f21965c221934b9f535858e3c9e41d88') in 0.0425702 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Sprite/sprite fruit/v.png
+  artifactKey: Guid(a9f2648b4f605464db11f01a279afaaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/sprite fruit/v.png using Guid(a9f2648b4f605464db11f01a279afaaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e3a5d8594014e14a077ae5a695ee36c2') in 0.0403466 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.861317 seconds.
+  path: Assets/Sprite/Fruit/cote d 'ivoire/banane.png
+  artifactKey: Guid(095879973205da844971803ec626b786) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/Fruit/cote d 'ivoire/banane.png using Guid(095879973205da844971803ec626b786) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ba9d85468105f333a6e4c9291b7965c7') in 0.0418487 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprite/Fruit/cote d 'ivoire/courge.png
+  artifactKey: Guid(8cf923f0360f8254b9f1f30e2fb14544) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/Fruit/cote d 'ivoire/courge.png using Guid(8cf923f0360f8254b9f1f30e2fb14544) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '10c98a67810ed92ba63cb3ec43a4f333') in 0.0386677 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Sprite/Fruit/cote d 'ivoire/Patate douce.png
+  artifactKey: Guid(d314a5764097dcd40853345018082519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/Fruit/cote d 'ivoire/Patate douce.png using Guid(d314a5764097dcd40853345018082519) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'acb546c82d548da19f23d8fbdb06ddb7') in 0.0469463 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.290325 seconds.
+  path: Assets/Sprite/Fruit/sénégal/citron.png
+  artifactKey: Guid(0fd630177463b9047ad23e7ec57c957c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/Fruit/sénégal/citron.png using Guid(0fd630177463b9047ad23e7ec57c957c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '424ce7e9ec20d4b0b8fd274a06c1c225') in 0.0842368 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Sprite/Fruit/sénégal/oinion.png
+  artifactKey: Guid(e4d9d80181bd48245832a9f51e14510d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/Fruit/sénégal/oinion.png using Guid(e4d9d80181bd48245832a9f51e14510d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5ebf22880e721e982aac7d08111b0f90') in 0.0732414 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Sprite/Fruit/sénégal/Patate douce.png
+  artifactKey: Guid(7cd6120db57b07d41bc3d376a8a54e08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/Fruit/sénégal/Patate douce.png using Guid(7cd6120db57b07d41bc3d376a8a54e08) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '53a99fef2cff7a27f79e8262a16d7899') in 0.0713977 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 42.605141 seconds.
+  path: Assets/Sprite/Fruit/Nigeria/Grenade.png
+  artifactKey: Guid(0caf7c5776b799e4c936e6a831c610e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/Fruit/Nigeria/Grenade.png using Guid(0caf7c5776b799e4c936e6a831c610e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '023a7953b98366cef3db9081897c8e78') in 0.047732 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Sprite/Fruit/Nigeria/papaye.png
+  artifactKey: Guid(8ff7f68cee02ae341b9c2d1723adf0ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/Fruit/Nigeria/papaye.png using Guid(8ff7f68cee02ae341b9c2d1723adf0ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1565d90d554e874643d3402418dd9a35') in 0.0474202 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprite/Fruit/Nigeria/Piment vert.png
+  artifactKey: Guid(3ce1243247af1a445bf4f4a4b8daecc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/Fruit/Nigeria/Piment vert.png using Guid(3ce1243247af1a445bf4f4a4b8daecc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '71607eb84ceb2134f12693021bd4f203') in 0.0715849 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 52.345305 seconds.
+  path: Assets/Sprite/Fruit/Maroc/Courget.png
+  artifactKey: Guid(0893a6a52513c914ea954adfb4730588) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/Fruit/Maroc/Courget.png using Guid(0893a6a52513c914ea954adfb4730588) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c17109d42cc88038ea60998d078e98d6') in 0.0665016 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprite/Fruit/Maroc/Mandarine.png
+  artifactKey: Guid(91672b4c240a86f44bd13de11ca0f242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/Fruit/Maroc/Mandarine.png using Guid(91672b4c240a86f44bd13de11ca0f242) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '329ea2599fff700b3798753d403d2638') in 0.065476 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Sprite/Fruit/Maroc/Grenade.png
+  artifactKey: Guid(ae68d09ba8554da4785d128dff005d3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/Fruit/Maroc/Grenade.png using Guid(ae68d09ba8554da4785d128dff005d3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ad27791be9c8e49fa66e4a9da74633cf') in 0.055442 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
