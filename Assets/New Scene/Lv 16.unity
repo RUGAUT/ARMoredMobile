@@ -1984,7 +1984,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -1.4309609, y: -0.2470231}
+  m_Offset: {x: -1.4811478, y: -0.39473295}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1994,7 +1994,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 4.2384896, y: 6.9076204}
+  m_Size: {x: 4.7479067, y: 7.20304}
   m_EdgeRadius: 0
 --- !u!114 &1019241927
 MonoBehaviour:
@@ -4563,7 +4563,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.10673237, y: 1.1119182}
+  m_Offset: {x: -0.15736294, y: 1.1119182}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4573,7 +4573,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 12.747084, y: 0.9828075}
+  m_Size: {x: 13.354652, y: 0.98280764}
   m_EdgeRadius: 0
 --- !u!95 &5563167651957084065
 Animator:
@@ -4640,6 +4640,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Decors
+      objectReference: {fileID: 0}
+    - target: {fileID: 8265215079387695342, guid: 7b16776c381d13d4daa029b8f09b7c65,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.41218215
+      objectReference: {fileID: 0}
+    - target: {fileID: 8265215079387695342, guid: 7b16776c381d13d4daa029b8f09b7c65,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.93573296
       objectReference: {fileID: 0}
     - target: {fileID: 8968180744388723089, guid: 7b16776c381d13d4daa029b8f09b7c65,
         type: 3}
