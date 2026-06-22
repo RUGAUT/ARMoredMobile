@@ -1,10 +1,10 @@
-using System.Collections;
+ï»¿using System.Collections;
 using UnityEngine;
 
 public class BlinkUntilFruitLimit : MonoBehaviour
 {
-    public float blinkInterval = 0.1f; // Intervalle entre chaque clignotement
-    public int fruitEntryLimit = 3; // Nombre maximum de fruits autorisés avant destruction
+    public float blinkInterval = 0.1f;
+    public int fruitEntryLimit = 3;
 
     private SpriteRenderer spriteRenderer;
     private bool isBlinking = true;
@@ -12,14 +12,25 @@ public class BlinkUntilFruitLimit : MonoBehaviour
 
     void Start()
     {
+        // ðŸ”¥ cherche aussi sur les enfants (plus robuste)
         spriteRenderer = GetComponent<SpriteRenderer>();
+
         if (spriteRenderer == null)
         {
-            Debug.LogError("No SpriteRenderer found on the GameObject.");
+            spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        }
+
+        if (spriteRenderer == null)
+        {
+            Debug.LogWarning(
+                "SpriteRenderer introuvable sur " + gameObject.name +
+                " â†’ script dÃ©sactivÃ©"
+            );
+
+            enabled = false;
             return;
         }
 
-        // Démarre le clignotement dès le début
         StartCoroutine(Blink());
     }
 
@@ -28,30 +39,31 @@ public class BlinkUntilFruitLimit : MonoBehaviour
         if (other.gameObject.layer == LayerMask.NameToLayer("Fruit"))
         {
             fruitCount++;
+
             if (fruitCount >= fruitEntryLimit)
             {
-                Destroy(gameObject); // Détruit l'objet après avoir atteint la limite
+                Destroy(gameObject);
             }
         }
     }
 
     private IEnumerator Blink()
     {
-        while (isBlinking)
+        while (isBlinking && spriteRenderer != null)
         {
             spriteRenderer.enabled = !spriteRenderer.enabled;
             yield return new WaitForSeconds(blinkInterval);
         }
 
-        spriteRenderer.enabled = true; // Assure que l'objet est visible à la fin
+        if (spriteRenderer != null)
+            spriteRenderer.enabled = true;
     }
 
     public void StopBlinking()
     {
         isBlinking = false;
-        spriteRenderer.enabled = true;
+
+        if (spriteRenderer != null)
+            spriteRenderer.enabled = true;
     }
 }
-
-
-

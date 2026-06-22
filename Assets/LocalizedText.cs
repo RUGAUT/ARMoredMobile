@@ -19,6 +19,28 @@ public class LocalizedText : MonoBehaviour
 
     public void UpdateText()
     {
-        text.text = LanguageManager.Instance.GetText(key);
+        if (text == null)
+        {
+            Debug.LogWarning("TMP_Text manquant sur " + gameObject.name);
+            return;
+        }
+
+        if (LanguageManager.Instance == null)
+        {
+            Debug.LogWarning("LanguageManager.Instance est NULL !");
+            text.text = key; // fallback
+            return;
+        }
+
+        string value = LanguageManager.Instance.GetText(key);
+
+        if (string.IsNullOrEmpty(value))
+        {
+            text.text = key; // fallback si traduction absente
+        }
+        else
+        {
+            text.text = value;
+        }
     }
 }

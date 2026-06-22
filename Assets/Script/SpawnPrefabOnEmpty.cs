@@ -1,123 +1,102 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 public class FusionSpawnManager : MonoBehaviour
 {
     [Header("Configuration du BoxCollider2D")]
-    public BoxCollider2D boxCollider2D; // Zone où se produisent les fusions
+    public BoxCollider2D boxCollider2D;
 
     [Header("Layer des objets fusionnables")]
-    public LayerMask fusionLayer; // Layer des objets pouvant fusionner
+    public LayerMask fusionLayer;
 
-    [Header("Prefab à générer")]
-    public GameObject prefabToSpawn; // Le prefab à instancier
-    public Transform spawnLocation; // L'endroit où le prefab doit apparaître
+    [Header("Prefab Ã  gÃ©nÃ©rer")]
+    public GameObject prefabToSpawn;
+    public Transform spawnLocation;
 
-    [Header("Fusions nécessaires pour le spawn")]
-    public int requiredFusions = 2; // Nombre de fusions consécutives nécessaires
+    [Header("Fusions nÃ©cessaires pour le spawn")]
+    public int requiredFusions = 2;
 
-    [Header("Durée limite entre deux fusions")]
-    public float fusionTimeLimit = 5f; // Temps (en secondes) entre deux fusions pour être comptées comme successives
+    [Header("DurÃ©e limite entre deux fusions")]
+    public float fusionTimeLimit = 5f;
 
     [Header("Effet sonore")]
-    public AudioClip spawnSoundEffect; // Son joué lors du spawn
-    public AudioSource audioSource; // Composant AudioSource pour jouer le son
+    public AudioClip spawnSoundEffect;
+    public AudioSource audioSource;
 
-    private int fusionCount = 0; // Compteur de fusions successives
-    private float lastFusionTime = 0f; // Temps de la dernière fusion enregistrée
+    private int fusionCount = 0;
+    private float lastFusionTime = 0f;
 
     private void Start()
     {
         if (boxCollider2D == null)
         {
             boxCollider2D = GetComponent<BoxCollider2D>();
+
             if (boxCollider2D == null)
             {
-                Debug.LogError("Aucun BoxCollider2D n'est assigné ou présent sur l'objet !");
+                Debug.LogError("BoxCollider2D manquant !");
                 enabled = false;
                 return;
             }
         }
 
-        if (!boxCollider2D.isTrigger)
-        {
-            Debug.LogWarning("Le BoxCollider2D doit être défini comme Trigger !");
-            boxCollider2D.isTrigger = true; // Assure que le collider est en mode Trigger
-        }
+        boxCollider2D.isTrigger = true;
 
         if (audioSource == null)
         {
             audioSource = GetComponent<AudioSource>();
+
             if (audioSource == null)
             {
-                Debug.LogError("Aucun AudioSource assigné ou trouvé sur cet objet !");
+                Debug.LogWarning("AudioSource manquant â†’ son dÃ©sactivÃ©");
             }
         }
     }
 
     public void RegisterFusion(GameObject fusionResult)
     {
-        // Vérifie si le résultat de la fusion est dans le bon Layer
-        if (IsInLayerMask(fusionResult, fusionLayer))
+        if (!IsInLayerMask(fusionResult, fusionLayer))
+            return;
+
+        float currentTime = Time.time;
+
+        if (currentTime - lastFusionTime > fusionTimeLimit)
         {
-            float currentTime = Time.time;
+            fusionCount = 0;
+        }
 
-            // Vérifie si la dernière fusion a été trop éloignée dans le temps
-            if (currentTime - lastFusionTime > fusionTimeLimit)
-            {
-                fusionCount = 0; // Réinitialise le compteur
-                Debug.Log("Temps écoulé trop long entre les fusions. Compteur réinitialisé.");
-            }
+        fusionCount++;
+        lastFusionTime = currentTime;
 
-            fusionCount++;
-            lastFusionTime = currentTime;
-
-            Debug.Log($"Fusion enregistrée. Compteur actuel : {fusionCount}");
-
-            // Si le nombre de fusions atteint le seuil requis
-            if (fusionCount >= requiredFusions)
-            {
-                SpawnPrefab();
-                fusionCount = 0; // Réinitialise le compteur après le spawn
-            }
+        if (fusionCount >= requiredFusions)
+        {
+            SpawnPrefab();
+            fusionCount = 0;
         }
     }
 
     private void SpawnPrefab()
     {
-        Debug.Log("Prefab instancié après deux fusions !");
-        if (prefabToSpawn != null && spawnLocation != null)
+        if (prefabToSpawn == null || spawnLocation == null)
         {
-            Instantiate(prefabToSpawn, spawnLocation.position, spawnLocation.rotation);
-            Debug.Log("Prefab instancié après deux fusions !");
+            Debug.LogError("Prefab ou spawnLocation manquant !");
+            return;
+        }
 
-            // Joue l'effet sonore
-            PlaySoundEffect();
-        }
-        else
-        {
-            Debug.LogError("Prefab ou emplacement non défini !");
-        }
+        Instantiate(prefabToSpawn, spawnLocation.position, spawnLocation.rotation);
+
+        PlaySoundEffect();
     }
 
     private void PlaySoundEffect()
     {
-        if (audioSource != null && spawnSoundEffect != null)
-        {
-            audioSource.PlayOneShot(spawnSoundEffect);
-        }
-        else
-        {
-            Debug.LogWarning("Aucun effet sonore ou AudioSource n'est défini !");
-        }
+        if (audioSource == null || spawnSoundEffect == null)
+            return;
+
+        audioSource.PlayOneShot(spawnSoundEffect);
     }
 
-    // Vérifie si un GameObject appartient au LayerMask
     private bool IsInLayerMask(GameObject obj, LayerMask layerMask)
     {
         return (layerMask.value & (1 << obj.layer)) != 0;
     }
 }
-
-
-
-

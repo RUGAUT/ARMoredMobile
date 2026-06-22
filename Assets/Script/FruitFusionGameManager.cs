@@ -9,7 +9,7 @@ public class FruitFusionGameManager : MonoBehaviour
 {
     public Text timerText;
     public Text currentScoreText;
-    public List<Text> fusionCountTexts; // Liste pour les différents Text UI
+    public List<Text> fusionCountTexts;
     public GameObject winUI;
     public GameObject gameOverUI;
     public Transform topBoundary;
@@ -22,14 +22,14 @@ public class FruitFusionGameManager : MonoBehaviour
 
     public FusionSpawnManager fusionSpawnManager;
 
-    public List<GameObject> targetFruitPrefabs; // Liste des prefabs de fruits cibles
-    public List<int> requiredFusions; // Liste des fusions nécessaires par fruit
+    public List<GameObject> targetFruitPrefabs;
+    public List<int> requiredFusions;
 
-    public List<ParticleSystem> fusionVFXPrefabs; // Liste des VFX à jouer pour chaque fruit fusionné
-    public List<Transform> fusionVFXSpawnPoints; // Liste des points où les VFX vont apparaître
+    public List<ParticleSystem> fusionVFXPrefabs;
+    public List<Transform> fusionVFXSpawnPoints;
 
-    private Dictionary<string, int> fusionCounts = new Dictionary<string, int>(); // Dictionnaire pour les fusions par type
-    private HashSet<GameObject> fusedFruits = new HashSet<GameObject>(); // Garde une trace des fusions déjà comptées
+    private Dictionary<string, int> fusionCounts = new Dictionary<string, int>();
+    private HashSet<GameObject> fusedFruits = new HashSet<GameObject>();
 
     private int currentScore = 0;
     public float timer = 60f;
@@ -37,13 +37,14 @@ public class FruitFusionGameManager : MonoBehaviour
     private bool isTopBoundaryMoving = false;
     private bool isGameOver = false;
 
-    public StarRatingManager starRatingManager; // Gestionnaire des étoiles
+    public StarRatingManager starRatingManager;
     public int level;
 
     public bool canContinueWin = false;
     private bool isGameFinish = false;
 
-    public List<GameObject> targetFinishObjects; // Liste des objets à activer lorsque la fusion est réussie
+    public List<GameObject> targetFinishObjects;
+
     void Start()
     {
         initialTopBoundaryPosition = topBoundary.position;
@@ -66,7 +67,6 @@ public class FruitFusionGameManager : MonoBehaviour
             return;
         }
 
-        // Vérifier si le topBoundary est touché par un fruit
         List<Collider2D> fruits = new List<Collider2D>();
         ContactFilter2D filter = new ContactFilter2D();
         filter.SetLayerMask(fruitLayer);
@@ -74,13 +74,9 @@ public class FruitFusionGameManager : MonoBehaviour
 
         if (fruits.Count > 0 && !isTopBoundaryMoving)
         {
-            StartCoroutine(MoveTopBoundary(Vector3.right)); // Déplacer vers la droite
+            StartCoroutine(MoveTopBoundary(Vector3.right));
         }
 
-        // Mettre à jour les étoiles
-        //starRatingManager.UpdateStarRating(timer);
-
-        // Vérifier si un fruit touche le topBoundary pour Game Over
         List<Collider2D> gameOverFruits = new List<Collider2D>();
         topBoundaryCollider.Overlap(filter, gameOverFruits);
 
@@ -89,7 +85,7 @@ public class FruitFusionGameManager : MonoBehaviour
             GameOver();
         }
 
-        if (isGameOver) return; // Arrête la logique si le jeu est en pause
+        if (isGameOver) return;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -102,7 +98,6 @@ public class FruitFusionGameManager : MonoBehaviour
 
             if (fusionCounts.ContainsKey(fruitTag))
             {
-                // Vérifier si la fusion pour ce fruit a déjà atteint le maximum requis
                 int index = targetFruitPrefabs.FindIndex(fruit => fruit.tag == fruitTag);
                 if (index != -1 && fusionCounts[fruitTag] < requiredFusions[index])
                 {
@@ -110,19 +105,16 @@ public class FruitFusionGameManager : MonoBehaviour
                     fusedFruits.Add(other.gameObject);
                     UpdateFusionCountUI();
 
-                    // **Jouer la VFX correspondante ici, quand la fusion atteint la quantité requise**
                     if (fusionCounts[fruitTag] == requiredFusions[index])
                     {
                         PlayFusionVFX(index);
 
-                        // Activer le GameObject correspondant dans targetFinishObjects
                         if (index < targetFinishObjects.Count && targetFinishObjects[index] != null)
                         {
                             targetFinishObjects[index].SetActive(true);
                         }
                     }
 
-                    // Vérifier la condition de victoire globale
                     if (CheckAllFusionsComplete())
                     {
                         StartCoroutine(Win());
@@ -198,40 +190,50 @@ public class FruitFusionGameManager : MonoBehaviour
     IEnumerator Win()
     {
         isGameFinish = true;
-        // Appeler les effets de victoire avant de continuer
-        GetComponent<VictoryDefeatEffectsManager>().PlayVictoryEffects();
-        winUI.SetActive(true);
-        yield return new WaitUntil( () => canContinueWin == true);
-        // Afficher l'interface de victoire
 
-        // Déterminer le nombre d'étoiles en fonction du temps restant
-        int stars = starRatingManager.CalculateStars(timer);
-        starRatingManager.UpdateStarRating(timer);
-        // Récupérer les étoiles actuellement stockées pour ce niveau
-        int currentStars = PlayerPrefs.GetInt("Stars" + level, 0);
-
-        // Comparer les étoiles actuelles avec celles calculées et ne garder que le maximum
-        if (stars > currentStars)
+        // Vérification et appel sécurisé de VictoryDefeatEffectsManager
+        VictoryDefeatEffectsManager effectsManager = GetComponent<VictoryDefeatEffectsManager>();
+        if (effectsManager != null)
         {
-            // Mettre à jour les étoiles si le nouveau nombre est supérieur
-            PlayerPrefs.SetInt("Stars" + level, stars);
+            effectsManager.PlayVictoryEffects();
+        }
+        else
+        {
+            Debug.LogWarning("VictoryDefeatEffectsManager introuvable sur ce GameObject !");
         }
 
-        // Enregistrer le niveau comme complété
-        PlayerPrefs.SetInt("LevelComplete", level);
-        PlayerPrefs.SetInt("isComplete" + level, 1);
+        winUI.SetActive(true);
+        yield return new WaitUntil(() => canContinueWin == true);
 
-        // Débloquer le niveau suivant
-        //int nextLevel = level + 1;
-        //if (nextLevel <= LevelManager.Instance.levelButtons.Length)
-        //{
-        //    PlayerPrefs.SetInt("isComplete" + nextLevel, 1);
-        //}
+        // Vérification de starRatingManager
+        if (starRatingManager != null)
+        {
+            int stars = starRatingManager.CalculateStars(timer);
+            starRatingManager.UpdateStarRating(timer);
+            int currentStars = PlayerPrefs.GetInt("Stars" + level, 0);
 
-        // Appeler la mise à jour de l'affichage des étoiles dans LevelManager
-        LevelManager.Instance.UpdateLevelStars(level, Mathf.Max(stars, currentStars));
+            if (stars > currentStars)
+            {
+                PlayerPrefs.SetInt("Stars" + level, stars);
+            }
 
-        
+            PlayerPrefs.SetInt("LevelComplete", level);
+            PlayerPrefs.SetInt("isComplete" + level, 1);
+
+            // Vérification de LevelManager.Instance
+            if (LevelManager.Instance != null)
+            {
+                LevelManager.Instance.UpdateLevelStars(level, Mathf.Max(stars, currentStars));
+            }
+            else
+            {
+                Debug.LogWarning("LevelManager.Instance est null !");
+            }
+        }
+        else
+        {
+            Debug.LogWarning("starRatingManager est null !");
+        }
     }
 
     public void RestartGame()
@@ -244,17 +246,22 @@ public class FruitFusionGameManager : MonoBehaviour
 
     public void GameOver()
     {
-        // Appeler les effets de défaite avant de continuer
-        GetComponent<VictoryDefeatEffectsManager>().PlayDefeatEffects();
+        // Vérification et appel sécurisé de VictoryDefeatEffectsManager
+        VictoryDefeatEffectsManager effectsManager = GetComponent<VictoryDefeatEffectsManager>();
+        if (effectsManager != null)
+        {
+            effectsManager.PlayDefeatEffects();
+        }
+        else
+        {
+            Debug.LogWarning("VictoryDefeatEffectsManager introuvable sur ce GameObject !");
+        }
 
-        if (isGameOver) return; // Empêche d'appeler plusieurs fois
+        if (isGameOver) return;
         isGameOver = true;
 
         gameOverUI.SetActive(true);
         Time.timeScale = 0;
-        // Arrêter toutes les interactions sans modifier Time.timeScale
-
-        
     }
 
     public void DisplayVfx(GameObject obj)
@@ -262,17 +269,13 @@ public class FruitFusionGameManager : MonoBehaviour
         fusionSpawnManager.RegisterFusion(obj);
     }
 
-    // Méthode pour jouer le VFX de fusion
     private void PlayFusionVFX(int index)
     {
         if (index >= 0 && index < fusionVFXPrefabs.Count && index < fusionVFXSpawnPoints.Count)
         {
-            // Instancier et jouer la VFX à la position du point de fusion
             Transform spawnPoint = fusionVFXSpawnPoints[index];
             ParticleSystem fusionVFX = Instantiate(fusionVFXPrefabs[index], spawnPoint.position, Quaternion.identity);
             fusionVFX.Play();
-
-            // Détruire la VFX après sa durée de vie
             Destroy(fusionVFX.gameObject, fusionVFX.main.duration);
         }
         else
